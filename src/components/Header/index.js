@@ -1,13 +1,20 @@
 import React from 'react'
-import MobileMenu from './MobileMenu'
+import Navigation from './Navigation'
+import { Container, Row, Col } from 'react-bootstrap'
 
 import './styles.scss'
 
 const Header = () => {
     return (
-        <div>
-            <MobileMenu />
-        </div>
+        <header>
+            <Container>
+                <Row>
+                    <Col>
+                        <Navigation />
+                    </Col>
+                </Row>
+            </Container>
+        </header>
     )
 }
 
