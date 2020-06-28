@@ -1,4 +1,5 @@
 @import '../../assets/scss/variables.scss';
+@import '../../assets/scss/mixins.scss';
 
 header {
     position: fixed;
@@ -18,11 +19,20 @@ header {
                 justify-content: space-between;
                 height: 6.8rem;
 
-                .logo {
-                    z-index: 1500;
+                .logo-wrapper {
+                    width: 5.5rem;
+                    z-index: 2500;
 
-                    .logo-wrapper {
-                        width: 5.5rem;
+                    .logo {
+                        a {
+                            img {
+                                @include trans6;
+
+                                &.open {
+                                    opacity: .4;
+                                }
+                            }
+                        }
                     }
                 }
 
@@ -43,24 +53,20 @@ header {
                         width: 4rem;
                         height: 2.5rem;
                         opacity: 1;
-                        transition: all 0.5s ease-in-out;
+                        @include trans5;
 
                         &.open {
                             transform: translateX(-2rem);
                             width: 6rem;
                             height: 2.7rem;
-
-                            //Stops hamburger moving to the left when open
-                            margin-right: -2rem;
                         }
 
                         .bar {
                             width: 100%;
-                            height: 0.2rem;
                             height: 0.4rem;
                             border-radius: 0.8rem;
                             background: #165d69;
-                            transition: all 0.5s ease-in-out;
+                            @include trans5;
 
                             &__top {
                                 &.open {
@@ -92,14 +98,12 @@ header {
                     width: 0;
                     top: 0;
                     right: 0;
-                    background: #343434;
-                    // overflow-y: scroll;
-                    z-index: 1400;
+                    background: $clr-lightTeal;
                     visibility: hidden;
-                    transition: all 0.4s ease-in-out;
+                    z-index: 1400;
+                    @include trans4;
 
                     &.open {
-                        // width: 100vw;
                         width: 100%;
                         visibility: visible;
                         opacity: 1;
@@ -114,20 +118,21 @@ header {
                             display: flex;
                             flex-direction: column;
                             align-items: flex-start;
-                            padding-top: 14.4rem;
+                            padding-top: 14rem;
 
                             ul {
-                                list-style-type: none;
                                 padding: 0;
 
                                 li {
+                                    margin-bottom: 1rem;
+
                                     a {
                                         display: block;
                                         font-size: 3.5rem;
                                         font-weight: 700;
                                         color: #5C5C5C;
-                                        margin-bottom: 2rem;
-                                        transition: all 0.5s ease-in-out;
+                                        padding: 3rem 0;
+                                        @include trans5;
 
                                         &:hover {
                                             color: #2D2D2D;
@@ -146,11 +151,11 @@ header {
         }
     }
 
-    a {
-        &.active {
-            color: #FF1145;
-        }
-    }
+    // a {
+    //     &.active {
+    //         color: #fff;
+    //     }
+    // }
 
     .desktop-menu {
         display: none;
@@ -176,7 +181,7 @@ header {
                             height: 6.8rem;
                             display: flex;
                             align-items: center;
-                            transition: all 0.3s ease-in-out;
+                            @include trans3;
 
                             &:hover {
                                 background: #2D2D2D;
@@ -184,6 +189,7 @@ header {
 
                             &.active {
                                 background: #2D2D2D;
+                                color: #fff;
                             }
                         }
                     }

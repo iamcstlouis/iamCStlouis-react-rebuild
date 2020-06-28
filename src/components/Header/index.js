@@ -13,12 +13,14 @@ const Header = () => {
             <Container>
                 <Row>
                     <Col>
-                        <div className='logo'>
-                            <div className='logo-wrapper'>
-                                <Link to='/'>
+                        <div className='logo-wrapper'>
+                            <div className='logo'>
+                                <Link to='/'
+                                    onClick={() => { setMenuState(!menuOpen) }}
+                                >
                                     <img
                                         src={Logo}
-                                        className='logo'
+                                        className={`logo ${menuOpen ? 'open' : ''}`}
                                         alt='iamCStlouis Logo'
                                     />
                                 </Link>
@@ -33,14 +35,15 @@ const Header = () => {
                             </div>
                         </div>
 
-                        <div id='mobile-menu' className={`mobile-menu`}>
+                        <div id='mobile-menu' className={`mobile-menu ${menuOpen ? 'open' : ''}`}>
                             <div className='mobile-menu-links'>
-                                <div className='container'>
+                                <Container>
                                     <ul>
                                         <li>
                                             <NavLink
                                                 exact
                                                 to='/'
+                                                onClick={() => { setMenuState(!menuOpen) }}
                                             >
                                                 Home
                                         </NavLink>
@@ -49,6 +52,7 @@ const Header = () => {
                                             <NavLink
                                                 exact
                                                 to='/portfolio'
+                                                onClick={() => { setMenuState(!menuOpen) }}
                                             >
                                                 Portfolio
                                         </NavLink>
@@ -57,6 +61,7 @@ const Header = () => {
                                             <NavLink
                                                 exact
                                                 to='/about'
+                                                onClick={() => { setMenuState(!menuOpen) }}
                                             >
                                                 About
                                         </NavLink>
@@ -64,27 +69,30 @@ const Header = () => {
                                         <li>
                                             <NavLink
                                                 exact
-                                                to='contact'
+                                                to='/testimonials'
+                                                onClick={() => { setMenuState(!menuOpen) }}
                                             >
                                                 Testimonials
                                         </NavLink>
                                         </li>
                                         <li>
                                             <a href='https://iamcstlouis.bigcartel.com'
+                                                onClick={() => { setMenuState(!menuOpen) }}
                                             >
-                                                Testimonials
+                                                Shop
                                         </a>
                                         </li>
                                         <li>
                                             <NavLink
                                                 exact
                                                 to='contact'
+                                                onClick={() => { setMenuState(!menuOpen) }}
                                             >
                                                 Contact
                                         </NavLink>
                                         </li>
                                     </ul>
-                                </div>
+                                </Container>
                             </div>
                         </div>
 
