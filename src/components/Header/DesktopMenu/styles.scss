@@ -1,0 +1,43 @@
+@import '../../../assets/scss/variables.scss';
+@import '../../../assets/scss/mixins.scss';
+
+.desktop-menu {
+    display: none;
+    z-index: 2000;
+
+    @media screen and (min-width: 1024px) {
+        display: block;
+
+        .desktop-links {
+            ul {
+                display: flex;
+                justify-content: space-between;
+                list-style-type: none;
+                margin: 0;
+
+                li {
+                    a {
+                        font-size: 16px;
+                        font-weight: 500;
+                        color: #FFF;
+                        letter-spacing: 1px;
+                        padding: 0 2rem;
+                        height: 6.8rem;
+                        display: flex;
+                        align-items: center;
+                        @include trans3;
+
+                        &:hover {
+                            background: #2D2D2D;
+                        }
+
+                        &.active {
+                            background: #2D2D2D;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
