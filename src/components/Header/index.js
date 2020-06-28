@@ -92,6 +92,18 @@ const Header = () => {
                                         </NavLink>
                                         </li>
                                     </ul>
+
+                                    <div className="socials">
+                                        <a href="https://twitter.com/iamcstlouis" target="blank"><i className="fab fa-twitter"
+                                            onClick={() => { setMenuState(!menuOpen) }}
+                                        ></i></a>
+                                        <a href="https://www.facebook.com/iamCStlouis" target="blank"><i className="fab fa-facebook"
+                                            onClick={() => { setMenuState(!menuOpen) }}
+                                        ></i></a>
+                                        <a href="https://www.instagram.com/iamcstlouis/" target="blank"><i className="fab fa-instagram"
+                                            onClick={() => { setMenuState(!menuOpen) }}
+                                        ></i></a>
+                                    </div>
                                 </Container>
                             </div>
                         </div>
