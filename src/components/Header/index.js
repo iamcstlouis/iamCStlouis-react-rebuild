@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { NavLink, Link } from 'react-router-dom'
 import { Container, Col, Row } from 'react-bootstrap'
 
@@ -6,6 +6,8 @@ import './styles.scss'
 import Logo from '../../images/global/cs-logo.png'
 
 const Header = () => {
+    const [menuOpen, setMenuState] = useState(false);
+
     return (
         <header>
             <Container>
@@ -23,11 +25,11 @@ const Header = () => {
                             </div>
                         </div>
 
-                        <div className={`menu-toggler`}>
+                        <div className={`menu-toggler`} onClick={() => { setMenuState(!menuOpen) }}>
                             <div className='hamburger-btn'>
-                                <div className={`bar bar__top}`}></div>
-                                <div className={`bar bar__mid}`}></div>
-                                <div className={`bar bar__btm}`}></div>
+                                <div className={`bar bar__top ${menuOpen ? 'open' : ''}`}></div>
+                                <div className={`bar bar__mid ${menuOpen ? 'open' : ''}`}></div>
+                                <div className={`bar bar__btm ${menuOpen ? 'open' : ''}`}></div>
                             </div>
                         </div>
 
@@ -46,9 +48,9 @@ const Header = () => {
                                         <li>
                                             <NavLink
                                                 exact
-                                                to='/work'
+                                                to='/portfolio'
                                             >
-                                                Work
+                                                Portfolio
                                         </NavLink>
                                         </li>
                                         <li>
@@ -58,6 +60,20 @@ const Header = () => {
                                             >
                                                 About
                                         </NavLink>
+                                        </li>
+                                        <li>
+                                            <NavLink
+                                                exact
+                                                to='contact'
+                                            >
+                                                Testimonials
+                                        </NavLink>
+                                        </li>
+                                        <li>
+                                            <a href='https://iamcstlouis.bigcartel.com'
+                                            >
+                                                Testimonials
+                                        </a>
                                         </li>
                                         <li>
                                             <NavLink
