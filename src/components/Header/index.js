@@ -2,6 +2,7 @@ import React from 'react'
 import { NavLink, Link } from 'react-router-dom'
 import { Container, Col, Row } from 'react-bootstrap'
 
+import './styles.scss'
 import Logo from '../../images/global/cs-logo.png'
 
 const Header = () => {
@@ -9,7 +10,7 @@ const Header = () => {
         <header>
             <Container>
                 <Row>
-                    <Col xs={12} style={{ border: 'solid red 2px' }}>
+                    <Col>
                         <div className='logo'>
                             <div className='logo-wrapper'>
                                 <Link to='/'>

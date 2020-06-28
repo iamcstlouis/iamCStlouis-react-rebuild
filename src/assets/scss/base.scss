@@ -20,8 +20,32 @@ body {
     flex-direction: column;
     align-items: flex-start;
 
+    img {
+        display: block;
+        width: 100%;
+    }
+
+    a {
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: none !important;
+        }
+    }
+
     main {
         margin-top: 9.5rem;
         padding-bottom: 15rem;
+    }
+}
+
+// For sticky footer
+#root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+    .site-content {
+        flex: 1;
     }
 }
