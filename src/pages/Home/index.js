@@ -1,10 +1,10 @@
 import React from 'react'
-import HeroImage from './HeroImage'
+import Hero from './Hero'
 
 const Home = () => {
     return (
         <React.Fragment>
-            <HeroImage />
+            <Hero />
         </React.Fragment>
     )
 }
