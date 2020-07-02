@@ -1,0 +1,71 @@
+@import '../../../assets/scss/variables.scss';
+@import '../../../assets/scss/mixins.scss';
+
+.profile-and-socials {
+    text-align: center;
+
+    .profile {
+        letter-spacing: .2rem;
+
+        .name {
+            color: $clr-lightGrey;
+
+            &:after {
+                content: '';
+                display: block;
+                height: 2px;
+                width: 80%;
+                margin: 0 auto;
+                background: #7777774d;
+
+                @media screen and (min-width: 1024px) {
+                    margin-right: auto;
+                    margin-left: 0;
+                    width: 100%;
+                }
+            }
+        }
+
+        .profession {
+            color: $clr-lighterGrey;
+
+            span {
+                color: $clr-darkGrey;
+                font-weight: $fw-bold;
+            }
+        }
+    }
+
+    .socials {
+        margin-top: 1.5rem;
+
+        a {
+            padding: .7rem;
+
+            i {
+                font-size: 25px;
+                color: $clr-lighterGrey;
+                opacity: .2;
+            }
+
+            &:hover {
+                i {
+                    @include btn-hover;
+                    color: $clr-lightGrey;
+                    opacity: .5;
+                }
+            }
+        }
+
+        @media screen and (min-width: 1024px) {
+            margin-top: 0;
+            margin-right: 3rem;
+        }
+    }
+
+    @media screen and (min-width: 1024px) {
+        display: flex;
+        justify-content: space-between;
+        text-align: left;
+    }
+}

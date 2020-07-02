@@ -1,11 +1,17 @@
-// import React from 'react'
+import React from 'react'
+import Profile from './Profile'
+import { Container, Row, Col } from 'react-bootstrap'
 
-// const Home = () => {
-//     return (
-//         <div>
+const Home = () => {
+    return (
+        <Container>
+            <Row>
+                <Col xs='12'>
+                    <Profile />
+                </Col>
+            </Row>
+        </Container>
+    )
+}
 
-//         </div>
-//     )
-// }
-
-// export default Home
+export default Home

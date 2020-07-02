@@ -1,8 +1,8 @@
 import React from 'react';
-// import { Switch, Route } from 'react-router-dom'
+import { Switch, Route } from 'react-router-dom'
 
 import Header from './components/Header';
-// import Home from './pages/Home'
+import Home from './pages/Home'
 // import Portfolio from './pages/Portfolio'
 // import About from './pages/About'
 // import Testimonials from './pages/Testimonials'
@@ -16,13 +16,16 @@ function App() {
     <div>
       <Header />
 
-      {/* <Switch>
-        <Route exact path='/' component={Home} />
-        <Route path='/portfolio' component={Portfolio} />
+      <main>
+        <Switch>
+          <Route exact path='/' component={Home} />
+          {/* <Route path='/portfolio' component={Portfolio} />
         <Route path='/about' component={About} />
         <Route path='/testimonials' component={Testimonials} />
-        <Route path='/contact' component={Contact} />
-      </Switch> */}
+        <Route path='/contact' component={Contact} /> */}
+        </Switch>
+      </main>
+
     </div>
   );
 }
