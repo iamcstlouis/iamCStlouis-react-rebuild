@@ -1,0 +1,31 @@
+@import '../../assets/scss/variables.scss';
+@import '../../assets/scss/mixins.scss';
+
+
+.top-socials {
+    margin-top: 1.5rem;
+    margin-left: auto;
+
+    a {
+        padding: .7rem;
+
+        i {
+            font-size: 25px;
+            color: $clr-lighterGrey;
+            opacity: .2;
+        }
+
+        &:hover {
+            i {
+                @include btn-hover;
+                color: $clr-lightGrey;
+                opacity: .5;
+            }
+        }
+    }
+
+    @media screen and (min-width: 1024px) {
+        margin-top: 0;
+        margin-right: 3rem;
+    }
+}

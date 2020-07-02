@@ -1,0 +1,30 @@
+@import '../../assets/scss/variables.scss';
+@import '../../assets/scss/mixins.scss';
+
+.contact-info {
+    letter-spacing: .2rem;
+
+    .for-enquiries {
+        color: $clr-lighterGrey;
+
+        // &:after {
+        //     content: '';
+        //     display: block;
+        //     height: 2px;
+        //     width: 80%;
+        //     margin: 0 auto;
+        //     background: #7777774d;
+
+        //     @media screen and (min-width: 1024px) {
+        //         margin-right: auto;
+        //         margin-left: 0;
+        //         width: 100%;
+        //     }
+        // }
+    }
+
+    .email {
+        color: $clr-lightGrey;
+        font-weight: $fw-bold;
+    }
+}

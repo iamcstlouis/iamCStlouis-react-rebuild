@@ -4,7 +4,7 @@ import { Container } from 'react-bootstrap'
 
 import Header from './components/Header';
 import Home from './pages/Home';
-import Profile from './components/Profile'
+import ProfileAndSocials from './components/ProfileAndSocials'
 // import Portfolio from './pages/Portfolio'
 // import About from './pages/About'
 // import Testimonials from './pages/Testimonials'
@@ -20,7 +20,10 @@ function App() {
 
       <main>
         <Container>
-          <Profile />
+          <div className='profile-socials-wrapper'>
+            <ProfileAndSocials />
+          </div>
+
           <Switch>
             <Route exact path='/' component={Home} />
             {/* <Route path='/portfolio' component={Portfolio} />
