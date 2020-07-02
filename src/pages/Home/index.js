@@ -1,14 +1,11 @@
 import React from 'react'
-import { Container, Row, Col } from 'react-bootstrap'
+import HeroImage from './HeroImage'
 
 const Home = () => {
     return (
-        <Container>
-            <Row>
-                <Col xs='12'>
-                </Col>
-            </Row>
-        </Container>
+        <React.Fragment>
+            <HeroImage />
+        </React.Fragment>
     )
 }
 
