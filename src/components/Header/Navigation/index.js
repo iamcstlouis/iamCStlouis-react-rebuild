@@ -6,33 +6,33 @@ import './styles.scss'
 import Logo from '../../../images/global/cs-logo.png'
 
 const Navigation = () => {
-    const [menuOpen, setMenuState] = useState(false);
+    const [Open, setOpen] = useState(false);
 
     return (
         <div className='navigation'>
             <div className='logo-wrapper'>
                 <div className='logo'>
                     <Link to='/'
-                        onClick={() => { setMenuState(!menuOpen) }}
+                        onClick={()=> {setOpen(Open ? !Open : Open)}}
                     >
                         <img
                             src={Logo}
-                            className={`logo ${menuOpen ? 'open' : ''}`}
+                            className={`logo ${Open ? 'open' : ''}`}
                             alt='iamCStlouis Logo'
                         />
                     </Link>
                 </div>
             </div>
 
-            <div className={`menu-toggler`} onClick={() => { setMenuState(!menuOpen) }}>
+            <div className={`menu-toggler`} onClick={() => { setOpen(!Open) }}>
                 <div className='hamburger-btn'>
-                    <div className={`bar bar__top ${menuOpen ? 'open' : ''}`}></div>
-                    <div className={`bar bar__mid ${menuOpen ? 'open' : ''}`}></div>
-                    <div className={`bar bar__btm ${menuOpen ? 'open' : ''}`}></div>
+                    <div className={`bar bar__top ${Open ? 'open' : ''}`}></div>
+                    <div className={`bar bar__mid ${Open ? 'open' : ''}`}></div>
+                    <div className={`bar bar__btm ${Open ? 'open' : ''}`}></div>
                 </div>
             </div>
-            
-            <div id='mobile-menu' className={`mobile-menu ${menuOpen ? 'open' : ''}`}>
+
+            <div id='mobile-menu' className={`mobile-menu ${Open ? 'open' : ''}`}>
                 <div className='mobile-menu-links'>
                     <Container>
                         <Row>
@@ -42,7 +42,7 @@ const Navigation = () => {
                                         <NavLink
                                             exact
                                             to='/'
-                                            onClick={() => { setMenuState(!menuOpen) }}
+                                            onClick={() => { setOpen(!Open) }}
                                         >
                                             Home
                                         </NavLink>
@@ -51,7 +51,7 @@ const Navigation = () => {
                                         <NavLink
                                             exact
                                             to='/portfolio'
-                                            onClick={() => { setMenuState(!menuOpen) }}
+                                            onClick={() => { setOpen(!Open) }}
                                         >
                                             Portfolio
                                         </NavLink>
@@ -60,7 +60,7 @@ const Navigation = () => {
                                         <NavLink
                                             exact
                                             to='/about'
-                                            onClick={() => { setMenuState(!menuOpen) }}
+                                            onClick={() => { setOpen(!Open) }}
                                         >
                                             About
                                         </NavLink>
@@ -69,14 +69,14 @@ const Navigation = () => {
                                         <NavLink
                                             exact
                                             to='/testimonials'
-                                            onClick={() => { setMenuState(!menuOpen) }}
+                                            onClick={() => { setOpen(!Open) }}
                                         >
                                             Testimonials
                                         </NavLink>
                                     </li>
                                     <li>
                                         <a href='https://iamcstlouis.bigcartel.com'
-                                            onClick={() => { setMenuState(!menuOpen) }}
+                                            onClick={() => { setOpen(!Open) }}
                                             target='_blank'
                                             rel="noopener noreferrer"
                                         >
@@ -87,7 +87,7 @@ const Navigation = () => {
                                         <NavLink
                                             exact
                                             to='contact'
-                                            onClick={() => { setMenuState(!menuOpen) }}
+                                            onClick={() => { setOpen(!Open) }}
                                         >
                                             Contact
                                         </NavLink>
@@ -95,13 +95,13 @@ const Navigation = () => {
                                 </ul>
                                 <div className='socials'>
                                     <a href='https://twitter.com/iamcstlouis' target='_blank' rel="noopener noreferrer"><i className='fab fa-twitter'
-                                        onClick={() => { setMenuState(!menuOpen) }}
+                                        onClick={() => { setOpen(!Open) }}
                                     ></i></a>
                                     <a href='https://www.facebook.com/iamCStlouis' target='_blank' rel="noopener noreferrer"><i className='fab fa-facebook'
-                                        onClick={() => { setMenuState(!menuOpen) }}
+                                        onClick={() => { setOpen(!Open) }}
                                     ></i></a>
                                     <a href='https://www.instagram.com/iamcstlouis/' target='_blank' rel="noopener noreferrer"><i className='fab fa-instagram'
-                                        onClick={() => { setMenuState(!menuOpen) }}
+                                        onClick={() => { setOpen(!Open) }}
                                     ></i></a>
                                 </div>
                             </Col>
@@ -150,8 +150,8 @@ const Navigation = () => {
                                     </li>
                                     <li>
                                         <a href='https://iamcstlouis.bigcartel.com'
-                                        target='_blank'
-                                        rel="noopener noreferrer"
+                                            target='_blank'
+                                            rel="noopener noreferrer"
                                         >
                                             Shop
                                         </a>

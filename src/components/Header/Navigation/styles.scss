@@ -103,124 +103,127 @@
 
         .mobile-menu-links {
 
-                @media screen and (min-width: 1024px) {
-                    display: none;
+            @media screen and (min-width: 1024px) {
+                display: none;
+            }
+
+            .container {
+                padding-top: 8rem;
+
+                @media screen and (min-width: 375px) {
+                    padding-top: 14rem;
                 }
 
-                .container {
-                    padding-top: 14rem;
+                .row {
+                    .col {
+                        display: block;
+                        height: auto;
 
-                    .row {
-                        .col {
-                            display: block;
-                            height: auto;
+                        ul {
+                            padding: 0;
 
-                            ul {
-                                padding: 0;
+                            li {
+                                margin-bottom: 1rem;
 
-                                li {
-                                    margin-bottom: 1rem;
+                                a {
+                                    display: block;
+                                    font-size: 3.5rem;
+                                    font-weight: 700;
+                                    color: #165d69;
+                                    padding: 3rem 0;
+                                    @include trans5;
 
-                                    a {
-                                        display: block;
-                                        font-size: 3.5rem;
-                                        font-weight: 700;
-                                        color: #165d69;
-                                        padding: 3rem 0;
-                                        @include trans5;
+                                    &:hover {
+                                        color: #2D2D2D;
+                                    }
 
-                                        &:hover {
-                                            color: #2D2D2D;
-                                        }
-
-                                        &.active {
-                                            color: #fff;
-                                        }
+                                    &.active {
+                                        color: #fff;
                                     }
                                 }
                             }
+                        }
 
-                            .socials {
-                                margin-top: 3rem;
+                        .socials {
+                            margin-top: 3rem;
 
-                                a {
-                                    display: inline-block;
-                                    padding: 0 1rem 0 0;
-                                    margin: 0 1rem 0 0;
+                            a {
+                                display: inline-block;
+                                padding: 0 1rem 0 0;
+                                margin: 0 1rem 0 0;
 
+                                i {
+                                    font-size: 2rem;
+                                    color: rgb(22, 93, 105);
+                                    opacity: .8;
+                                    @include btn-hover;
+                                }
+
+                                &:hover {
                                     i {
-                                        font-size: 2rem;
-                                        color: rgb(22, 93, 105);
-                                        opacity: .8;
-                                        @include btn-hover;
-                                    }
-
-                                    &:hover {
-                                        i {
-                                            color: $clr-darkGrey;
-                                            opacity: .7;
-                                        }
+                                        color: $clr-darkGrey;
+                                        opacity: .7;
                                     }
                                 }
                             }
                         }
                     }
                 }
+            }
         }
     }
 
-        .desktop-menu {
-            display: none;
-                        
-            @media screen and (min-width: 1024px) {
-                display: block;
-                z-index: 2000;
+    .desktop-menu {
+        display: none;
 
-                .desktop-menu-links {
-                    .container {
-                        .row {
-                            .col {
-                                ul {
+        @media screen and (min-width: 1024px) {
+            display: block;
+            z-index: 2000;
+
+            .desktop-menu-links {
+                .container {
+                    .row {
+                        .col {
+                            ul {
+                                display: flex;
+                                margin-left: auto;
+
+                                li {
                                     display: flex;
-                                    margin-left: auto;
+                                    align-items: center;
 
-                                    li {
+                                    a {
                                         display: flex;
                                         align-items: center;
-                                        
-                                        a {
-                                            display: flex;
-                                            align-items: center;
-                                            font-size: 18px;
-                                            letter-spacing: .07rem;
-                                            color: $clr-darkGrey;
-                                            height: 6.8rem;
-                                            padding: 0 2rem;
-                                            @include btn-hover;
+                                        font-size: 18px;
+                                        letter-spacing: .07rem;
+                                        color: $clr-darkGrey;
+                                        height: 6.8rem;
+                                        padding: 0 2rem;
+                                        @include btn-hover;
 
-                                            &:hover {
-                                                background: -moz-linear-gradient(top, rgba(22, 93, 105, 0) 0%, rgba(22, 93, 105, 0.41) 42%, rgba(22, 93, 105, 0.41) 62%, rgba(22, 93, 105, 0.01) 99%, rgba(22, 93, 105, 0) 100%);
-                                                /* FF3.6-15 */
-                                                background: -webkit-linear-gradient(top, rgba(22, 93, 105, 0) 0%, rgba(22, 93, 105, 0.41) 42%, rgba(22, 93, 105, 0.41) 62%, rgba(22, 93, 105, 0.01) 99%, rgba(22, 93, 105, 0) 100%);
-                                                /* Chrome10-25,Safari5.1-6 */
-                                                background: linear-gradient(to bottom, rgba(22, 93, 105, 0) 0%, rgba(22, 93, 105, 0.41) 42%, rgba(22, 93, 105, 0.41) 62%, rgba(22, 93, 105, 0.01) 99%, rgba(22, 93, 105, 0) 100%);
-                                                /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-                                                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00165d69', endColorstr='#00165d69', GradientType=0);
-                                                /* IE6-9 */
-                                                color: $clr-white;
-                                            }
+                                        &:hover {
+                                            background: -moz-linear-gradient(top, rgba(22, 93, 105, 0) 0%, rgba(22, 93, 105, 0.41) 42%, rgba(22, 93, 105, 0.41) 62%, rgba(22, 93, 105, 0.01) 99%, rgba(22, 93, 105, 0) 100%);
+                                            /* FF3.6-15 */
+                                            background: -webkit-linear-gradient(top, rgba(22, 93, 105, 0) 0%, rgba(22, 93, 105, 0.41) 42%, rgba(22, 93, 105, 0.41) 62%, rgba(22, 93, 105, 0.01) 99%, rgba(22, 93, 105, 0) 100%);
+                                            /* Chrome10-25,Safari5.1-6 */
+                                            background: linear-gradient(to bottom, rgba(22, 93, 105, 0) 0%, rgba(22, 93, 105, 0.41) 42%, rgba(22, 93, 105, 0.41) 62%, rgba(22, 93, 105, 0.01) 99%, rgba(22, 93, 105, 0) 100%);
+                                            /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                                            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00165d69', endColorstr='#00165d69', GradientType=0);
+                                            /* IE6-9 */
+                                            color: $clr-white;
+                                        }
 
-                                            &.active {
-                                                background: -moz-linear-gradient(top, rgba(22, 93, 105, 0) 0%, rgba(22, 93, 105, 0.41) 42%, rgba(22, 93, 105, 0.41) 62%, rgba(22, 93, 105, 0.01) 99%, rgba(22, 93, 105, 0) 100%);
-                                                /* FF3.6-15 */
-                                                background: -webkit-linear-gradient(top, rgba(22, 93, 105, 0) 0%, rgba(22, 93, 105, 0.41) 42%, rgba(22, 93, 105, 0.41) 62%, rgba(22, 93, 105, 0.01) 99%, rgba(22, 93, 105, 0) 100%);
-                                                /* Chrome10-25,Safari5.1-6 */
-                                                background: linear-gradient(to bottom, rgba(22, 93, 105, 0) 0%, rgba(22, 93, 105, 0.41) 42%, rgba(22, 93, 105, 0.41) 62%, rgba(22, 93, 105, 0.01) 99%, rgba(22, 93, 105, 0) 100%);
-                                                /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-                                                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00165d69', endColorstr='#00165d69', GradientType=0);
-                                                /* IE6-9 */
-                                                color: $clr-white;
-                                            }
+                                        &.active {
+                                            background: -moz-linear-gradient(top, rgba(22, 93, 105, 0) 0%, rgba(22, 93, 105, 0.41) 42%, rgba(22, 93, 105, 0.41) 62%, rgba(22, 93, 105, 0.01) 99%, rgba(22, 93, 105, 0) 100%);
+                                            /* FF3.6-15 */
+                                            background: -webkit-linear-gradient(top, rgba(22, 93, 105, 0) 0%, rgba(22, 93, 105, 0.41) 42%, rgba(22, 93, 105, 0.41) 62%, rgba(22, 93, 105, 0.01) 99%, rgba(22, 93, 105, 0) 100%);
+                                            /* Chrome10-25,Safari5.1-6 */
+                                            background: linear-gradient(to bottom, rgba(22, 93, 105, 0) 0%, rgba(22, 93, 105, 0.41) 42%, rgba(22, 93, 105, 0.41) 62%, rgba(22, 93, 105, 0.01) 99%, rgba(22, 93, 105, 0) 100%);
+                                            /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                                            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00165d69', endColorstr='#00165d69', GradientType=0);
+                                            /* IE6-9 */
+                                            color: $clr-white;
                                         }
                                     }
                                 }
@@ -229,5 +232,6 @@
                     }
                 }
             }
+        }
     }
 }
