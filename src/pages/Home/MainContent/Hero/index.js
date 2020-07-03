@@ -1,5 +1,5 @@
 import React from 'react'
-import HeroImage from '../../../images/home/homepg-img-mj.jpg'
+import HeroImage from '../../../../images/home/homepg-img-mj.jpg'
 
 import './styles.scss'
 
