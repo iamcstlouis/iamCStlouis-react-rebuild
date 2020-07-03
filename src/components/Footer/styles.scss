@@ -1,0 +1,35 @@
+@import '../../assets/scss/variables.scss';
+@import '../../assets/scss/mixins.scss';
+
+.footer {
+    background: $clr-lightTeal;
+    border-top: solid $clr-darkTeal .2rem;
+    text-align: center;
+    font-size: 1.4rem;
+    color: $clr-footer;
+    padding: 5rem 0;
+    margin-top: 10rem;
+
+    .logo-wrapper {
+        width: 77px;
+        margin: 0 auto;
+    }
+
+    .contatc-info {
+        margin-top: 1rem;
+    }
+
+    .footer-socials {
+
+        a {
+            display: inline-block;
+            text-decoration: none;
+
+            i {
+                font-size: 3rem;
+                color: $clr-footer;
+                margin: 1rem .5rem 0 .5rem;
+            }
+        }
+    }
+}

@@ -4,7 +4,8 @@ import { Container } from 'react-bootstrap'
 
 import Header from './components/Header';
 import Home from './pages/Home';
-import ProfileAndContactInfo from './components/ProfileAndContactInfo'
+import ProfileAndContactInfo from './components/ProfileAndContactInfo';
+import Footer from './components/Footer';
 // import Portfolio from './pages/Portfolio'
 // import About from './pages/About'
 // import Testimonials from './pages/Testimonials'
@@ -34,6 +35,7 @@ function App() {
         </Container>
       </main>
 
+      <Footer />
     </div>
   );
 }

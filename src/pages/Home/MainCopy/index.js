@@ -11,7 +11,6 @@ const MainCopy = () => {
                 then you have
                 come to the right place!
             </p>
-
             <p>
                 A lot of iamCStlouis’ work is commission based, so please feel free to contact her to discuss
                 your
