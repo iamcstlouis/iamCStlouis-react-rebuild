@@ -8,7 +8,7 @@ import ProfileAndContactInfo from './components/ProfileAndContactInfo';
 import Footer from './components/Footer';
 // import Portfolio from './pages/Portfolio'
 import About from './pages/About'
-// import Testimonials from './pages/Testimonials'
+import Testimonials from './pages/Testimonials'
 // import Contact from './pages/Contact'
 
 import './assets/scss/reset.scss'
@@ -29,8 +29,8 @@ function App() {
             <Route exact path='/' component={Home} />
             {/* <Route path='/portfolio' component={Portfolio} />*/}
             <Route path='/about' component={About} />
-            {/* <Route path='/testimonials' component={Testimonials} />
-            <Route path='/contact' component={Contact} />  */}
+            <Route path='/testimonials' component={Testimonials} />
+            {/* <Route path='/contact' component={Contact} />  */}
           </Switch>
         </Container>
       </main>
