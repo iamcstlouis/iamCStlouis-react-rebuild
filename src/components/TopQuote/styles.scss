@@ -1,0 +1,29 @@
+@import '../../assets/scss/variables.scss';
+@import '../../assets/scss/mixins.scss';
+
+.top-quote {
+    font-family: $ff-quote;
+    font-size: 18px;
+    text-align: center;
+    border-top: solid $clr-lighterGrey 1px;
+    border-bottom: solid $clr-lighterGrey 1px;
+    padding: 2rem .5rem;
+    margin-top: 2.5rem;
+
+    span {
+        color: $clr-lightTeal;
+
+        &.artist-name {
+            color: $clr-lightGrey;
+
+            @media screen and (min-width: 768px) {
+                display: block;
+            }
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        font-size: 24px;
+        margin-top: 5rem;
+    }
+}
