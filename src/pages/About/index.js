@@ -1,12 +1,10 @@
 import React from 'react'
-import PageTitle from '../../components/PageTitle'
-import TopQuote from '../../components/TopQuote'
+import MainContent from './MainContent'
 
 const About = () => {
     return (
         <React.Fragment>
-            <PageTitle title={'About Me'} />
-            <TopQuote />
+            <MainContent />
         </React.Fragment>
     )
 }

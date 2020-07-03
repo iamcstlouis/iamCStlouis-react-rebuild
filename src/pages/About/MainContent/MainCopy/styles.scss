@@ -1,0 +1,22 @@
+@import '../../../../assets/scss/variables.scss';
+@import '../../../../assets/scss/mixins.scss';
+
+.about-paragraphs {
+    text-align: center;
+
+    p {
+        font-weight: $fw-normal;
+        color: $clr-lighterGrey;
+        margin-top: 2rem;
+    }
+
+    @media screen and (min-width: 1280px) {
+        flex: 0 0 50%;
+        order: 0;
+        text-align: left;
+
+        p {
+            padding-right: 6rem;
+        }
+    }
+}

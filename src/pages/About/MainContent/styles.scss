@@ -1,0 +1,9 @@
+@import '../../../assets/scss/variables.scss';
+@import '../../../assets/scss/mixins.scss';
+
+.content-wrapper {
+    @media screen and (min-width: 1280px) {
+        display: flex;
+        margin-top: 5rem;
+    }
+}
