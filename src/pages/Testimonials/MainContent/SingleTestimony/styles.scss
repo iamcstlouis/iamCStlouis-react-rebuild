@@ -1,0 +1,69 @@
+@import '../../../../assets/scss/variables.scss';
+@import '../../../../assets/scss/mixins.scss';
+
+.single-testimony {
+    margin-top: 10rem;
+
+    &:first-child {
+        margin-top: 5rem;
+    }
+
+    img {
+        border: solid $clr-lighterGrey 3px;
+
+        @media screen and (min-width: 1280px) {
+            width: 70%;
+            margin: 0 auto;
+        }
+    }
+
+    .testimonial-txt-box {
+        text-align: center;
+        border-top: solid $clr-lighterGrey 1px;
+        border-bottom: solid $clr-lighterGrey 1px;
+        width: 90%;
+        padding: 2rem 0;
+        margin: 3rem auto 0 auto;
+
+        .testimonial-quote {
+            font-family: $ff-quote;
+            font-size: 20px;
+            color: $clr-darkGrey;
+            line-height: 1.3;
+            width: 97%;
+            padding-bottom: 1.5rem;
+            margin: 0 auto;
+
+            @media screen and (min-width: 768px) {
+                font-size: 25px;
+            }
+
+            @media screen and (min-width: 1280px) {
+                font-size: 30px;
+            }
+        }
+
+        span {
+            font-family: $ff-body-txt;
+            font-size: 16px;
+            font-weight: $fw-bold;
+            color: $clr-lighterGrey;
+        }
+
+        .testimonial-sub {
+            font-size: 16px;
+            color: $clr-lighterGrey;
+            font-weight: $fw-normal;
+            display: inline-block;
+        }
+
+        @media screen and (min-width: 768px) {
+            width: 80%;
+            margin: 5rem auto 0 auto;
+        }
+
+        @media screen and (min-width: 1280px) {
+            width: 60%;
+        }
+    }
+}

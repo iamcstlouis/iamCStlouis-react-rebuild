@@ -9,7 +9,7 @@ const TestimonialsData = [
         img: ZalonImage,
         alt: 'Zalon Music with iamCStlouis Amy Winehouse painting',
         testimonialQuote: 'It’s beautiful. Thank you for the beauty you add to this world.',
-        testimonyFrom: 'Zalon Music -',
+        testimonyFrom: 'Zalon Music',
         excerpt: 'Musician and good friend of the late Amy Winehouse.',
         id: 'zalon-testimony'
     },
@@ -17,7 +17,7 @@ const TestimonialsData = [
         img: KojoImage,
         alt: 'iamCStlouis presenting her Kojo painting to Kojo the comedian',
         testimonialQuote: 'I don’t like anything of myself. But this, this is sick!',
-        testimonyFrom: 'Kojo The Comedian -',
+        testimonyFrom: 'Kojo The Comedian',
         excerpt: 'Comedian and former Capital Xtra presenter.',
         id: 'kojo-testimony'
     },
@@ -25,7 +25,7 @@ const TestimonialsData = [
         img: ZahaImage,
         alt: 'iamCStlouis presenting her Zaha painting to Wilfred Zaha',
         testimonialQuote: 'Amazing!… This really is the best gift I’ve received in a long time.',
-        testimonyFrom: 'Wilfred Zaha (of Crystal Palace FC) -',
+        testimonyFrom: 'Wilfred Zaha (of Crystal Palace FC)',
         excerpt: 'Presented at his birthday party.',
         id: 'zaha-testimony'
     },
@@ -33,7 +33,7 @@ const TestimonialsData = [
         img: BolasieImage,
         alt: 'iamCStlouis presenting her Bolasie painting to Yannick bolasie',
         testimonialQuote: 'Best painted picture I’ve seen of myself.',
-        testimonyFrom: 'Yannick Bolasie -',
+        testimonyFrom: 'Yannick Bolasie',
         excerpt: '(of Everton FC).',
         id: 'bolasie-testimony'
     },
@@ -41,7 +41,7 @@ const TestimonialsData = [
         img: SlimShadyImage,
         alt: 'Mike with his birthday surprise painting of Eminem',
         testimonialQuote: 'Thank you so much for the Eminem painting. So good! The boys spoiled me... Thanks again',
-        testimonyFrom: 'Commissioned painting -',
+        testimonyFrom: 'Commissioned painting',
         excerpt: 'Surprise birthday present.',
         id: 'slim-shady-testimony'
     }

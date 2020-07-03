@@ -7,6 +7,7 @@ const MainContent = () => {
     return (
         <React.Fragment>
             <PageTitle title={'Testimonials'} />
+            
             <section className='testimonies'>
                 {
                     TestimonialsData.map((testimony) => (

@@ -1,5 +1,7 @@
 import React from 'react'
 
+import './styles.scss'
+
 const SingleTestimony = ({ img, alt, testimonialQuote, testimonyFrom, excerpt }) => {
     return (
         <div className='single-testimony'>
