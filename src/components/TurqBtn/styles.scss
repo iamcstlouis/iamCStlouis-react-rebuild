@@ -1,40 +1,56 @@
 @import '../../assets/scss/variables.scss';
 @import '../../assets/scss/mixins.scss';
 
-.btn {
-    margin-top: 5rem;
-    display: block;
 
-    a {
-        font-family: 'Fira Sans Condensed',
-            sans-serif;
-        font-size: 2.5rem;
-        color: $clr-white;
-        text-decoration: none;
-        background: $clr-darkTeal;
-        border: solid $clr-lightTeal .3rem;
-        padding: 1rem 9rem;
-        cursor: pointer;
-    }
+.btn-wrapper {
+    text-align: center;
 
-    &--contact {
-        @include btn-hover;
+    .btn {
+        margin-top: 5rem;
+        display: inline-block;
 
-        a {
+        &--contact {
+            display: inline-block;
+            width: 90%;
             @include btn-hover;
 
-            &:active {
-                color: $clr-darkGrey;
+            @media screen and (min-width: 768px) {
+                width: 50%;
+            }
+
+            @media screen and (min-width: 1024px) {
+                width: 25.6rem;
+            }
+
+            a {
+                @include btn-hover;
+
+                &:active {
+                    color: $clr-darkGrey;
+                }
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+
             }
         }
 
-        &:hover {
-            transform: scale(1.1);
+        a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Fira Sans Condensed',
+                sans-serif;
+            font-size: 2.5rem;
+            color: $clr-white;
+            text-decoration: none;
+            background: $clr-darkTeal;
+            border: solid $clr-lightTeal .3rem;
+            width: 100%;
+            height: 5.6rem;
+            margin: 0 auto;
+            cursor: pointer;
         }
-    }
-
-    @media screen and (min-width: 1280px) {
-        display: flex;
-        justify-content: center;
     }
 }

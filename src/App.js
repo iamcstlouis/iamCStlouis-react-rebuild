@@ -4,7 +4,7 @@ import { Container } from 'react-bootstrap'
 
 import Header from './components/Header';
 import Home from './pages/Home';
-import ProfileAndSocials from './components/ProfileAndSocials'
+import ProfileAndContactInfo from './components/ProfileAndContactInfo'
 // import Portfolio from './pages/Portfolio'
 // import About from './pages/About'
 // import Testimonials from './pages/Testimonials'
@@ -21,7 +21,7 @@ function App() {
       <main>
         <Container>
           <div className='profile-socials-wrapper'>
-            <ProfileAndSocials />
+            <ProfileAndContactInfo />
           </div>
 
           <Switch>

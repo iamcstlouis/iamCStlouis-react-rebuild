@@ -5,7 +5,7 @@ import TopSocials from '../TopSocials'
 import './styles.scss'
 import ContactInfo from '../ContactInfo'
 
-const ProfileAndSocials = () => {
+const ProfileAndContactInfo = () => {
     const pathname = window.location.pathname
 
     return (
@@ -18,4 +18,4 @@ const ProfileAndSocials = () => {
     )
 }
 
-export default ProfileAndSocials
+export default ProfileAndContactInfo
