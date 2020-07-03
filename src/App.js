@@ -9,7 +9,7 @@ import Footer from './components/Footer';
 // import Portfolio from './pages/Portfolio'
 import About from './pages/About'
 import Testimonials from './pages/Testimonials'
-// import Contact from './pages/Contact'
+import Contact from './pages/Contact'
 
 import './assets/scss/reset.scss'
 import './assets/scss/base.scss'
@@ -30,7 +30,7 @@ function App() {
             {/* <Route path='/portfolio' component={Portfolio} />*/}
             <Route path='/about' component={About} />
             <Route path='/testimonials' component={Testimonials} />
-            {/* <Route path='/contact' component={Contact} />  */}
+            <Route path='/contact' component={Contact} />
           </Switch>
         </Container>
       </main>

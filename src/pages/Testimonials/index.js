@@ -3,9 +3,9 @@ import MainContent from '../Testimonials/MainContent'
 
 const Testimonials = () => {
     return (
-        <div>
+        <React.Fragment>
             <MainContent />
-        </div>
+        </React.Fragment>
     )
 }
 
