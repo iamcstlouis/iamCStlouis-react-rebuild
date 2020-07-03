@@ -1,0 +1,40 @@
+@import '../../assets/scss/variables.scss';
+@import '../../assets/scss/mixins.scss';
+
+.btn {
+    margin-top: 5rem;
+    display: block;
+
+    a {
+        font-family: 'Fira Sans Condensed',
+            sans-serif;
+        font-size: 2.5rem;
+        color: $clr-white;
+        text-decoration: none;
+        background: $clr-darkTeal;
+        border: solid $clr-lightTeal .3rem;
+        padding: 1rem 9rem;
+        cursor: pointer;
+    }
+
+    &--contact {
+        @include btn-hover;
+
+        a {
+            @include btn-hover;
+
+            &:active {
+                color: $clr-darkGrey;
+            }
+        }
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    @media screen and (min-width: 1280px) {
+        display: flex;
+        justify-content: center;
+    }
+}
