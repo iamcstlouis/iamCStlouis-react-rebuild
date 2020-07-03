@@ -1,0 +1,26 @@
+@import '../../../assets/scss/variables.scss';
+@import '../../../assets/scss/mixins.scss';
+
+.what-i-do-txt-wrapper {
+    text-align: center;
+    margin-top: 3rem;
+
+    p {
+        font-weight: $fw-normal;
+        color: $clr-lighterGrey;
+
+        &:last-child {
+            margin-top: 2rem;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    @media screen and (min-width: 1280px) {
+        width: 65%;
+    }
+}
