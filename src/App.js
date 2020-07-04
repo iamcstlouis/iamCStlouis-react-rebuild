@@ -3,6 +3,7 @@ import { Switch, Route } from 'react-router-dom'
 import { Container } from 'react-bootstrap'
 
 import Header from './components/Header';
+import ScrollToTop from './components/ScrollToTop';
 import Home from './pages/Home';
 import ProfileAndContactInfo from './components/ProfileAndContactInfo';
 import Footer from './components/Footer';
@@ -18,6 +19,7 @@ function App() {
   return (
     <div>
       <Header />
+      <ScrollToTop />
 
       <main>
         <Container>
