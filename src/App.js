@@ -7,7 +7,7 @@ import ScrollToTop from './components/ScrollToTop';
 import Home from './pages/Home';
 import ProfileAndContactInfo from './components/ProfileAndContactInfo';
 import Footer from './components/Footer';
-// import Portfolio from './pages/Portfolio'
+import Portfolio from './pages/Portfolio'
 import About from './pages/About'
 import Testimonials from './pages/Testimonials'
 import Contact from './pages/Contact'
@@ -29,7 +29,7 @@ function App() {
 
           <Switch>
             <Route exact path='/' component={Home} />
-            {/* <Route path='/portfolio' component={Portfolio} />*/}
+            <Route path='/portfolio' component={Portfolio} />
             <Route path='/about' component={About} />
             <Route path='/testimonials' component={Testimonials} />
             <Route path='/contact' component={Contact} />

@@ -1,0 +1,11 @@
+@import '../../../../assets/scss/variables.scss';
+@import '../../../../assets/scss/mixins.scss';
+
+.sheet-music-gallery-section {
+
+    @media screen and (min-width: 1024px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
