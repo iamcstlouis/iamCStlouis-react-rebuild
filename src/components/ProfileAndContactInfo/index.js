@@ -8,10 +8,15 @@ import ContactInfo from '../ContactInfo'
 const ProfileAndContactInfo = () => {
     const pathname = window.location.pathname
 
+    // const [isHomepage, setProfile] = useState(pathname === '/')
+    // const [isContactPage, setContactInfo] = useState(pathname === '/contact')
+
+
+
     return (
         <React.Fragment>
 
-            {pathname === '/' ? <Profile /> : pathname === '/contact' ? <ContactInfo /> : ''}
+            {pathname === '/' ? <Profile /> : pathname === '/contact' ? <ContactInfo /> : null}
 
             <TopSocials />
         </React.Fragment>

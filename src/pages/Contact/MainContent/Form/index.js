@@ -23,7 +23,7 @@ const Form = () => {
                 <textarea name='message' required></textarea>
 
                 <button type='submit' className='submit-btn'>
-                    <span>Submit</span>
+                    <span>Send</span>
                 </button>
             </form>
         </div >

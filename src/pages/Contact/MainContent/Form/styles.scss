@@ -49,5 +49,26 @@
             width: 60%;
             margin: 0 auto;
         }
+
+        .submit-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Fira Sans Condensed',
+                sans-serif;
+            font-size: 20px;
+            color: $clr-white;
+            background: $clr-darkTeal;
+            border: solid $clr-lightTeal .3rem;
+            width: 15rem;
+            height: 4rem;
+            margin-top: 2rem;
+            cursor: pointer;
+
+            &:hover {
+                background: rgb(19, 79, 89);
+                @include btn-hover;
+            }
+        }
     }
 }
