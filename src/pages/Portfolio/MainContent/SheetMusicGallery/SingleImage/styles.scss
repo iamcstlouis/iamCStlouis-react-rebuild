@@ -1,11 +1,6 @@
 @import '../../../../../assets/scss/variables.scss';
 @import '../../../../../assets/scss/mixins.scss';
 
-a {
- &:hover {
-     cursor: initial;
- }
-
 .img-box {
     width: 28rem;
     height: 28rem;
@@ -22,7 +17,6 @@ a {
     margin-right: auto;
     margin-left: auto;
     border: solid $clr-lighterGrey .2rem;
-    // cursor: pointer;
 
     &:last-child {
         justify-self: flex-start;
@@ -118,5 +112,4 @@ a {
         width: 35rem;
         height: 35rem;
     }
-}
 }
