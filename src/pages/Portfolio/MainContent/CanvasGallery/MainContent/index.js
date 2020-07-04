@@ -1,18 +1,21 @@
 import React from 'react'
-import TopQuote from '../../../../components/TopQuote'
-import SingleImage from '../SingleImage'
+import TopQuote from '../../../../../components/TopQuote'
+import PageTitle from '../../../../../components/PageTitle'
+import SingleImage from '../../SingleImage'
 
-import SheetMusicData from './SheetMusicData'
+import CanvasData from '../../CanvasGallery/MainContent/CanvasData'
 
-import '../../MainContent/styles.scss'
+import '../../styles.scss'
 
-const SheetMusicGallery = () => {
+const MainContent = () => {
     return (
         <React.Fragment>
             <TopQuote />
+            <PageTitle title={'Canvas Paintings'} />
+
             <div className='gallery-section'>
                 {
-                    SheetMusicData.map((item) => {
+                    CanvasData.map((item) => {
                         return (
                             <SingleImage largeImage={item.largeImage} dataTitle={item.dataTitle} imagePreview={item.imagePreview} alt={item.alt} overlayHdr={item.overlayHdr} overlaySub={item.overlaySub} key={item.id} />
                         )
@@ -23,4 +26,4 @@ const SheetMusicGallery = () => {
     )
 }
 
-export default SheetMusicGallery
+export default MainContent

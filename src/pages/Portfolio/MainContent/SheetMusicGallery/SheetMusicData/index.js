@@ -43,7 +43,7 @@ import FreakyFridayPreview from '../../../../../images/portfolio/sheet-music/chr
 import NinetiesNostalgiaImage from '../../../../../images/portfolio/sheet-music/super-mario-sm-lrg.jpg'
 import NinetiesNostalgiaPreview from '../../../../../images/portfolio/sheet-music/super-mario-sm-preview.jpg'
 
-const SheetMusicdata = [
+const SheetMusicData = [
     {
         largeImage: DragonQueenImage,
         dataTitle: 'Dragon Queen',
@@ -244,4 +244,4 @@ const SheetMusicdata = [
     }
 ]
 
-export default SheetMusicdata
+export default SheetMusicData

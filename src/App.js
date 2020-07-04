@@ -8,6 +8,7 @@ import Home from './pages/Home';
 import ProfileAndContactInfo from './components/ProfileAndContactInfo';
 import Footer from './components/Footer';
 import Portfolio from './pages/Portfolio'
+import CanvasGallery from './pages/Portfolio/MainContent/CanvasGallery'
 import About from './pages/About'
 import Testimonials from './pages/Testimonials'
 import Contact from './pages/Contact'
@@ -29,7 +30,8 @@ function App() {
 
           <Switch>
             <Route exact path='/' component={Home} />
-            <Route path='/portfolio' component={Portfolio} />
+            <Route exact path='/portfolio' component={Portfolio} />
+            <Route path='/portfolio/canvas-paintings' component={CanvasGallery} />
             <Route path='/about' component={About} />
             <Route path='/testimonials' component={Testimonials} />
             <Route path='/contact' component={Contact} />
