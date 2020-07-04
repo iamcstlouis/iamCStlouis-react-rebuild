@@ -1,7 +1,7 @@
 import React from 'react'
 import MainContent from './MainContent'
 
-const CanvasGallery = () => {
+const CommissionedGallery = () => {
     return (
         <div>
             <MainContent />
@@ -9,4 +9,4 @@ const CanvasGallery = () => {
     )
 }
 
-export default CanvasGallery
+export default CommissionedGallery
