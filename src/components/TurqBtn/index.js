@@ -5,8 +5,8 @@ import './styles.scss'
 
 const TurqBtn = ({ btnLink, btnText }) => {
     return (
-        <div className='btn-wrapper'>
-            <div className='btn btn--contact'>
+        <div className='turq-btn-wrapper'>
+            <div className='btn'>
                 <Link to={btnLink}>{btnText}</Link>
             </div>
         </div>

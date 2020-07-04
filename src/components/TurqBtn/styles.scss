@@ -2,54 +2,40 @@
 @import '../../assets/scss/mixins.scss';
 
 
-.btn-wrapper {
+.turq-btn-wrapper {
     text-align: center;
 
     .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 25rem;
+        height: 5.6rem;
         margin-top: 4rem;
-        display: inline-block;
-
-        &--contact {
-            display: inline-block;
-            width: 90%;
-            @include btn-hover;
-
-            @media screen and (min-width: 768px) {
-                width: 50%;
-            }
-
-            @media screen and (min-width: 1024px) {
-                width: 25.6rem;
-            }
-
-            a {
-                @include btn-hover;
-
-                &:active {
-                    color: $clr-darkGrey;
-                }
-
-                &:hover {
-                    transform: scale(1.1);
-                }
-
-            }
-        }
+        background: $clr-darkTeal;
+        border: solid $clr-lightTeal .3rem;
+        @include btn-hover;
 
         a {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
+            display: inline-block;
             font-family: 'Fira Sans Condensed',
                 sans-serif;
-            font-size: 2.5rem;
+            font-size: 20px;
             color: $clr-white;
-            background: $clr-darkTeal;
-            border: solid $clr-lightTeal .3rem;
             width: 100%;
-            height: 5.6rem;
-            margin: 0 auto;
-            cursor: pointer;
+            @include btn-hover;
+        }
+
+        &:hover {
+            transform: scale(1.1);
+        }
+
+        @media screen and (min-width: 768px) {
+            width: 50%;
+        }
+
+        @media screen and (min-width: 1024px) {
+            width: 25.6rem;
         }
     }
 }
