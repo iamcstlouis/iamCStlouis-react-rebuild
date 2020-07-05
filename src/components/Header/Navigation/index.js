@@ -8,6 +8,7 @@ import Logo from '../../../images/global/cs-logo.png'
 
 const Navigation = () => {
     const [Open, setOpen] = useState(false);
+    const [DdOpen, setDdOpen] = useState(false);
 
     return (
         <div className='navigation'>
@@ -132,11 +133,15 @@ const Navigation = () => {
                                             exact
                                             to='/portfolio'
                                             className='desktop-menu__link'
+                                            onClick={() => { setDdOpen(!DdOpen) }}
+                                        // onMouseOver={() => { setDdOpen(!DdOpen) }}
+                                        // onMouseLeave={() => { setDdOpen(!DdOpen) }}
                                         >
                                             Portfolio
                                              <i className="fas fa-angle-down"></i>
                                         </NavLink>
-                                        <Dropdown />
+
+                                        <Dropdown OpenClass={!DdOpen ? '' : 'open'} />
                                     </li>
                                     <li className='desktop-menu__list-item'>
                                         <NavLink

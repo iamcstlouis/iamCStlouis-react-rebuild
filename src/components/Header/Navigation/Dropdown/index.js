@@ -3,9 +3,10 @@ import { NavLink } from 'react-router-dom'
 
 import './styles.scss'
 
-const Dropdown = () => {
+const Dropdown = ({ OpenClass }) => {
+
     return (
-        <div className='dropdown'>
+        <div className={`dropdown ${OpenClass}`}>
             <ul className='dropdown__list'>
                 <li className='dropdown__list-item'>
                     <NavLink to='/portfolio'
