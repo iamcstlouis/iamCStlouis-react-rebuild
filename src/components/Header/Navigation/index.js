@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { NavLink, Link } from 'react-router-dom'
 import { Container, Col, Row } from 'react-bootstrap'
+import Dropdown from './Dropdown'
 
 import './styles.scss'
 import Logo from '../../../images/global/cs-logo.png'
@@ -13,7 +14,7 @@ const Navigation = () => {
             <div className='logo-wrapper'>
                 <div className='logo'>
                     <Link to='/'
-                        onClick={()=> {setOpen(Open ? !Open : Open)}}
+                        onClick={() => { setOpen(Open ? !Open : Open) }}
                     >
                         <img
                             src={Logo}
@@ -54,6 +55,7 @@ const Navigation = () => {
                                             onClick={() => { setOpen(!Open) }}
                                         >
                                             Portfolio
+                                            <i className="fas fa-angle-down"></i>
                                         </NavLink>
                                     </li>
                                     <li>
@@ -110,65 +112,74 @@ const Navigation = () => {
                 </div>
             </div>
 
-            <div id='desktop-menu' className='desktop-menu'>
-                <div className='desktop-menu-links'>
-                    <Container>
-                        <Row>
-                            <Col>
-                                <ul>
-                                    <li>
+            <div id='desktop-menu-wrapper' className='desktop-menu-wrapper'>
+                <Container>
+                    <Row>
+                        <Col>
+                            <div className='desktop-menu'>
+                                <ul className='desktop-menu__list'>
+                                    <li className='desktop-menu__list-item'>
                                         <NavLink
                                             exact
                                             to='/'
+                                            className='desktop-menu__link'
                                         >
                                             Home
                                         </NavLink>
                                     </li>
-                                    <li>
+                                    <li className='desktop-menu__list-item portfolio-list-item'>
                                         <NavLink
                                             exact
                                             to='/portfolio'
+                                            className='desktop-menu__link'
                                         >
                                             Portfolio
+                                             <i className="fas fa-angle-down"></i>
                                         </NavLink>
+                                        <Dropdown />
                                     </li>
-                                    <li>
+                                    <li className='desktop-menu__list-item'>
                                         <NavLink
                                             exact
                                             to='/about'
+                                            className='desktop-menu__link'
                                         >
                                             About
                                         </NavLink>
                                     </li>
-                                    <li>
+                                    <li className='desktop-menu__list-item'>
                                         <NavLink
                                             exact
                                             to='/testimonials'
+                                            className='desktop-menu__link'
                                         >
                                             Testimonials
                                         </NavLink>
                                     </li>
-                                    <li>
+                                    <li className='desktop-menu__list-item'>
                                         <a href='https://iamcstlouis.bigcartel.com'
                                             target='_blank'
                                             rel="noopener noreferrer"
+
+                                            className='desktop-menu__link'
                                         >
                                             Shop
                                         </a>
                                     </li>
-                                    <li>
+                                    <li className='desktop-menu__list-item'>
                                         <NavLink
                                             exact
                                             to='contact'
+                                            className='desktop-menu__link'
                                         >
                                             Contact
                                         </NavLink>
                                     </li>
                                 </ul>
-                            </Col>
-                        </Row>
-                    </Container>
-                </div>
+                            </div>
+                        </Col>
+                    </Row>
+                </Container>
             </div>
         </div>
     )

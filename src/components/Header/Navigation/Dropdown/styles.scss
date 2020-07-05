@@ -1,0 +1,53 @@
+@import '../../../../assets/scss/variables.scss';
+@import '../../../../assets/scss/mixins.scss';
+
+@media screen and (min-width: 1024px) {
+    .portfolio-list-item {
+        position: relative;
+
+        .dropdown {
+            position: absolute;
+            top: 6.8rem;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 270px;
+            background: $clr-lightTeal;
+            opacity: .985;
+            border-radius: 0 0 .3rem .3rem;
+
+            &__list {
+                display: block;
+            }
+
+            &__list-item {
+                display: block;
+            }
+
+            &__link {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: $clr-darkGrey;
+                padding: 1.5rem 0;
+
+                &:hover {
+                    color: #fff;
+                    background: #165d6914;
+                }
+
+                &.active {
+                    color: #fff;
+                    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#165d69+0,30c2b9+100&0.44+0,1+100 */
+                    background: -moz-linear-gradient(top, rgba(22, 93, 105, 0.44) 0%, rgba(48, 194, 185, 1) 100%);
+                    /* FF3.6-15 */
+                    background: -webkit-linear-gradient(top, rgba(22, 93, 105, 0.44) 0%, rgba(48, 194, 185, 1) 100%);
+                    /* Chrome10-25,Safari5.1-6 */
+                    background: linear-gradient(to bottom, rgba(22, 93, 105, 0.44) 0%, rgba(48, 194, 185, 1) 100%);
+                    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#70165d69', endColorstr='#30c2b9', GradientType=0);
+                    /* IE6-9 */
+                }
+            }
+        }
+    }
+}
