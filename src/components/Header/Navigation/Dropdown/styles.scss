@@ -14,12 +14,8 @@
             background: $clr-lightTeal;
             opacity: .985;
             border-radius: 0 0 .3rem .3rem;
-            opacity: 0;
+            opacity: 1;
             @include trans5;
-
-            &.open {
-                opacity: 1;
-            }
 
             &__list {
                 display: block;

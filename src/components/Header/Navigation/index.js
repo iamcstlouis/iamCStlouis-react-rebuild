@@ -133,15 +133,15 @@ const Navigation = () => {
                                             exact
                                             to='/portfolio'
                                             className='desktop-menu__link'
-                                            onClick={() => { setDdOpen(!DdOpen) }}
-                                        // onMouseOver={() => { setDdOpen(!DdOpen) }}
-                                        // onMouseLeave={() => { setDdOpen(!DdOpen) }}
+                                            // onMouseOver={() => { setDdOpen(!DdOpen) }}
+                                            // onMouseLeave={() => { setDdOpen(DdOpen) }}
+                                            onClick={() => setDdOpen(!DdOpen)}
                                         >
                                             Portfolio
                                              <i className="fas fa-angle-down"></i>
                                         </NavLink>
 
-                                        <Dropdown OpenClass={!DdOpen ? '' : 'open'} />
+                                        {DdOpen && <Dropdown />}
                                     </li>
                                     <li className='desktop-menu__list-item'>
                                         <NavLink
