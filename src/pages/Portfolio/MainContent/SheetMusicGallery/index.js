@@ -1,4 +1,5 @@
 import React from 'react'
+import PageTitle from '../../../../components/PageTitle'
 import TopQuote from '../../../../components/TopQuote'
 import SingleImage from '../SingleImage'
 
@@ -9,6 +10,7 @@ import '../../MainContent/styles.scss'
 const SheetMusicGallery = () => {
     return (
         <React.Fragment>
+            <PageTitle title='Sheet Music Paintings' />
             <TopQuote />
             <div className='gallery-section'>
                 {

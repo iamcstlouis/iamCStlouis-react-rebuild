@@ -10,8 +10,8 @@ import '../../styles.scss'
 const MainContent = () => {
     return (
         <React.Fragment>
-            <TopQuote />
             <PageTitle title={'Canvas Paintings'} />
+            <TopQuote />
 
             <div className='gallery-section'>
                 {

@@ -133,9 +133,8 @@ const Navigation = () => {
                                             exact
                                             to='/portfolio'
                                             className='desktop-menu__link'
-                                            // onMouseOver={() => { setDdOpen(!DdOpen) }}
-                                            // onMouseLeave={() => { setDdOpen(DdOpen) }}
-                                            onClick={() => setDdOpen(!DdOpen)}
+                                            onMouseOver={() => { setDdOpen(!DdOpen) }}
+                                            onMouseLeave={() => { setDdOpen(DdOpen) }}
                                         >
                                             Portfolio
                                              <i className="fas fa-angle-down"></i>

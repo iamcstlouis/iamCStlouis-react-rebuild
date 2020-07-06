@@ -3,22 +3,21 @@ import { NavLink } from 'react-router-dom'
 
 import './styles.scss'
 
-const Dropdown = ({ DropdownLink }) => {
+const Dropdown = () => {
 
     return (
         <div className='dropdown'>
             <ul className='dropdown__list'>
                 <li className='dropdown__list-item'>
-                    <NavLink to='/portfolio'
+                    <NavLink to='/portfolio/sheetMusic-paintings'
                         className='dropdown__link'>
-                        {DropdownLink}
-                            Sheet Music Paintings
+                        Sheet Music Paintings
                     </NavLink>
                 </li>
+
                 <li className='dropdown__list-item'>
                     <NavLink to='/portfolio/canvas-paintings'
                         className='dropdown__link'>
-                        {DropdownLink}
                         Canvas Paintings
                     </NavLink>
                 </li>
@@ -26,7 +25,6 @@ const Dropdown = ({ DropdownLink }) => {
                 <li className='dropdown__list-item'>
                     <NavLink to='/portfolio/commissioned-paintings'
                         className='dropdown__link'>
-                        {DropdownLink}
                         Commissioned Paintings
                     </NavLink>
                 </li>
