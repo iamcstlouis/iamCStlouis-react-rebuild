@@ -32,10 +32,10 @@ function App() {
 
           <Switch>
             <Route exact path='/' component={Home} />
+            <Route exact path='/portfolio' component={Portfolio} />
             <Route path='/portfolio/sheetMusic-paintings' component={SheetMusicGallery} />
             <Route path='/portfolio/canvas-paintings' component={CanvasGallery} />
             <Route path='/portfolio/commissioned-paintings' component={CommissionedGallery} />
-            <Route path='/portfolio' component={Portfolio} />
             <Route path='/about' component={About} />
             <Route path='/testimonials' component={Testimonials} />
             <Route path='/contact' component={Contact} />
