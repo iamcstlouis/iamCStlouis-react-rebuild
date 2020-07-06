@@ -110,7 +110,7 @@
             padding-top: 8rem;
 
             @media screen and (min-width: 375px) {
-                padding-top: 14rem;
+                padding-top: 10rem;
             }
 
             .row {
@@ -126,6 +126,39 @@
 
                         &__list-item {
                             margin-bottom: 1rem;
+
+                            &--portfolio {
+
+                                .portfolio-submenu {
+
+                                    &__list {
+                                        margin-left: 2rem;
+                                    }
+
+                                    &__list-item {
+                                        margin: .5rem 0;
+                                    }
+
+                                    &__link {
+                                        display: block;
+                                        font-size: 18px;
+                                        font-weight: 400;
+                                        color: #165d69;
+
+                                        i {
+                                            padding: .5rem;
+                                        }
+
+                                        &.active {
+                                            color: #fff;
+                                        }
+
+                                        @media screen and (min-width: 375px) {
+                                            padding: .5rem 0;
+                                        }
+                                    }
+                                }
+                            }
                         }
 
                         &__link {
