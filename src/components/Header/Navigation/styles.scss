@@ -80,7 +80,7 @@
         }
     }
 
-    .mobile-menu {
+    .mobile-menu-wrapper {
         position: fixed;
         height: 100vh;
         width: 0;
@@ -101,46 +101,47 @@
             display: none;
         }
 
-        .mobile-menu-links {
 
-            @media screen and (min-width: 1024px) {
-                display: none;
+        @media screen and (min-width: 1024px) {
+            display: none;
+        }
+
+        .container {
+            padding-top: 8rem;
+
+            @media screen and (min-width: 375px) {
+                padding-top: 14rem;
             }
 
-            .container {
-                padding-top: 8rem;
+            .row {
+                .col {
+                    display: block;
+                    height: auto;
 
-                @media screen and (min-width: 375px) {
-                    padding-top: 14rem;
-                }
+                    .mobile-menu {
 
-                .row {
-                    .col {
-                        display: block;
-                        height: auto;
-
-                        ul {
+                        &__list {
                             padding: 0;
+                        }
 
-                            li {
-                                margin-bottom: 1rem;
+                        &__list-item {
+                            margin-bottom: 1rem;
+                        }
 
-                                a {
-                                    display: block;
-                                    font-size: 3.5rem;
-                                    font-weight: 700;
-                                    color: #165d69;
-                                    padding: .5rem 0;
-                                    @include trans5;
+                        &__link {
+                            display: block;
+                            font-size: 2.5rem;
+                            font-weight: 700;
+                            color: #165d69;
+                            padding: .5rem 0;
+                            @include trans5;
 
-                                    &:hover {
-                                        color: #2D2D2D;
-                                    }
+                            &:hover {
+                                color: #2D2D2D;
+                            }
 
-                                    &.active {
-                                        color: #fff;
-                                    }
-                                }
+                            &.active {
+                                color: #fff;
                             }
                         }
 

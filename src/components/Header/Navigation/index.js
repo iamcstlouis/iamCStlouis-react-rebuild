@@ -7,90 +7,129 @@ import './styles.scss'
 import Logo from '../../../images/global/cs-logo.png'
 
 const Navigation = () => {
-    const [Open, setOpen] = useState(false);
-    const [DdOpen, setDdOpen] = useState(false);
+    const [MobileMenuOpen, setMobileMenuOpen] = useState(false);
+    const [DesktopDdOpen, setDesktopDdOpen] = useState(false);
 
     return (
         <div className='navigation'>
             <div className='logo-wrapper'>
                 <div className='logo'>
                     <Link to='/'
-                        onClick={() => { setOpen(Open ? !Open : Open) }}
+                        onClick={() => { setMobileMenuOpen(MobileMenuOpen ? !MobileMenuOpen : MobileMenuOpen) }}
                     >
                         <img
                             src={Logo}
-                            className={`logo ${Open ? 'open' : ''}`}
+                            className={`logo ${MobileMenuOpen ? 'open' : ''}`}
                             alt='iamCStlouis Logo'
                         />
                     </Link>
                 </div>
             </div>
 
-            <div className={`menu-toggler`} onClick={() => { setOpen(!Open) }}>
+            <div className={`menu-toggler`} onClick={() => { setMobileMenuOpen(!MobileMenuOpen) }}>
                 <div className='hamburger-btn'>
-                    <div className={`bar bar__top ${Open ? 'open' : ''}`}></div>
-                    <div className={`bar bar__mid ${Open ? 'open' : ''}`}></div>
-                    <div className={`bar bar__btm ${Open ? 'open' : ''}`}></div>
+                    <div className={`bar bar__top ${MobileMenuOpen ? 'open' : ''}`}></div>
+                    <div className={`bar bar__mid ${MobileMenuOpen ? 'open' : ''}`}></div>
+                    <div className={`bar bar__btm ${MobileMenuOpen ? 'open' : ''}`}></div>
                 </div>
             </div>
 
-            <div id='mobile-menu' className={`mobile-menu ${Open ? 'open' : ''}`}>
-                <div className='mobile-menu-links'>
-                    <Container>
-                        <Row>
-                            <Col>
-                                <ul>
-                                    <li>
+            <div id='mobile-menu-wrapper' className={`mobile-menu-wrapper ${MobileMenuOpen ? 'open' : ''}`}>
+                <Container>
+                    <Row>
+                        <Col>
+
+                            {/*  ------------ | Mobile Menu | ------------ */}
+                            <div className='mobile-menu'>
+                                <ul className='mobile-menu__list'>
+                                    <li className='mobile-menu__list-item'>
                                         <NavLink
                                             exact
                                             to='/'
-                                            onClick={() => { setOpen(!Open) }}
+                                            className='mobile-menu__link'
+                                            onClick={() => { setMobileMenuOpen(!MobileMenuOpen) }}
                                         >
                                             Home
                                         </NavLink>
                                     </li>
-                                    <li>
+                                    <li className='mobile-menu__list-item mobile-menu__list-item--portfolio'>
                                         <NavLink
                                             exact
                                             to='/portfolio'
-                                            onClick={() => { setOpen(!Open) }}
+                                            className='mobile-menu__link'
+                                            onClick={() => { setMobileMenuOpen(!MobileMenuOpen) }}
                                         >
                                             Portfolio
                                             <i className="fas fa-angle-down"></i>
                                         </NavLink>
+
+                                        {/*  ------------ | Portfolio Submenu | ------------ */}
+                                        <div className="portfolio-submenu">
+                                            <ul className='portfolio-submenu__list'>
+                                                <li className='portfolio-submenu__list-item'>
+                                                    <NavLink to='/portfolio/sheetMusic-paintings'
+                                                        className='portfolio-submenu__link'
+                                                        onClick={() => { setMobileMenuOpen(!MobileMenuOpen) }}>
+                                                        Sheet Music Paintings
+                                                </NavLink>
+                                                </li>
+
+                                                <li className='portfolio-submenu__list-item'>
+                                                    <NavLink to='/portfolio/canvas-paintings'
+                                                        className='portfolio-submenu__link'
+                                                        onClick={() => { setMobileMenuOpen(!MobileMenuOpen) }}
+                                                    >
+                                                        Canvas Paintings
+                                                </NavLink>
+                                                </li>
+
+                                                <li className='portfolio-submenu__list-item'>
+                                                    <NavLink to='/portfolio/commissioned-paintings'
+                                                        className='portfolio-submenu__link'
+                                                        onClick={() => { setMobileMenuOpen(!MobileMenuOpen) }}
+                                                    >
+                                                        Commissioned Paintings
+                                                </NavLink>
+                                                </li>
+                                            </ul>
+                                        </div>
                                     </li>
-                                    <li>
+                                    <li className='mobile-menu__list-item'>
                                         <NavLink
                                             exact
                                             to='/about'
-                                            onClick={() => { setOpen(!Open) }}
+                                            className='mobile-menu__link'
+                                            onClick={() => { setMobileMenuOpen(!MobileMenuOpen) }}
                                         >
                                             About
                                         </NavLink>
                                     </li>
-                                    <li>
+                                    <li className='mobile-menu__list-item'>
                                         <NavLink
                                             exact
                                             to='/testimonials'
-                                            onClick={() => { setOpen(!Open) }}
+                                            className='mobile-menu__link'
+                                            onClick={() => { setMobileMenuOpen(!MobileMenuOpen) }}
                                         >
                                             Testimonials
                                         </NavLink>
                                     </li>
-                                    <li>
+                                    <li className='mobile-menu__list-item'>
                                         <a href='https://iamcstlouis.bigcartel.com'
-                                            onClick={() => { setOpen(!Open) }}
+                                            className='mobile-menu__link'
+                                            onClick={() => { setMobileMenuOpen(!MobileMenuOpen) }}
                                             target='_blank'
                                             rel="noopener noreferrer"
                                         >
                                             Shop
                                         </a>
                                     </li>
-                                    <li>
+                                    <li className='mobile-menu__list-item'>
                                         <NavLink
                                             exact
                                             to='contact'
-                                            onClick={() => { setOpen(!Open) }}
+                                            className='mobile-menu__link'
+                                            onClick={() => { setMobileMenuOpen(!MobileMenuOpen) }}
                                         >
                                             Contact
                                         </NavLink>
@@ -98,25 +137,27 @@ const Navigation = () => {
                                 </ul>
                                 <div className='socials'>
                                     <a href='https://twitter.com/iamcstlouis' target='_blank' rel="noopener noreferrer"><i className='fab fa-twitter'
-                                        onClick={() => { setOpen(!Open) }}
+                                        onClick={() => { setMobileMenuOpen(!MobileMenuOpen) }}
                                     ></i></a>
                                     <a href='https://www.facebook.com/iamCStlouis' target='_blank' rel="noopener noreferrer"><i className='fab fa-facebook'
-                                        onClick={() => { setOpen(!Open) }}
+                                        onClick={() => { setMobileMenuOpen(!MobileMenuOpen) }}
                                     ></i></a>
                                     <a href='https://www.instagram.com/iamcstlouis/' target='_blank' rel="noopener noreferrer"><i className='fab fa-instagram'
-                                        onClick={() => { setOpen(!Open) }}
+                                        onClick={() => { setMobileMenuOpen(!MobileMenuOpen) }}
                                     ></i></a>
                                 </div>
-                            </Col>
-                        </Row>
-                    </Container>
-                </div>
+                            </div>
+                        </Col>
+                    </Row>
+                </Container>
             </div>
 
             <div id='desktop-menu-wrapper' className='desktop-menu-wrapper'>
                 <Container>
                     <Row>
                         <Col>
+
+                            {/*  ------------ | Desktop Menu | ------------ */}
                             <div className='desktop-menu'>
                                 <ul className='desktop-menu__list'>
                                     <li className='desktop-menu__list-item'>
@@ -128,19 +169,19 @@ const Navigation = () => {
                                             Home
                                         </NavLink>
                                     </li>
-                                    <li className='desktop-menu__list-item portfolio-list-item'>
+                                    <li className='desktop-menu__list-item desktop-menu__list-item--portfolio'>
                                         <NavLink
                                             exact
                                             to='/portfolio'
                                             className='desktop-menu__link'
-                                            onMouseOver={() => { setDdOpen(!DdOpen) }}
-                                            onMouseLeave={() => { setDdOpen(DdOpen) }}
+                                            onMouseOver={() => { setDesktopDdOpen(!DesktopDdOpen) }}
+                                            onMouseLeave={() => { setDesktopDdOpen(DesktopDdOpen) }}
                                         >
                                             Portfolio
                                              <i className="fas fa-angle-down"></i>
                                         </NavLink>
 
-                                        {DdOpen && <Dropdown />}
+                                        {DesktopDdOpen && <Dropdown />}
                                     </li>
                                     <li className='desktop-menu__list-item'>
                                         <NavLink
