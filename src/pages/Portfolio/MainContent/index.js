@@ -25,7 +25,6 @@ const MainContent = () => {
 
             {width < breakpoint && <SubNav />}
 
-
             <Route exact path='/portfolio' render={() => <Redirect to='/portfolio/sheetMusic-paintings' />} />
             <Route path='/portfolio/sheetMusic-paintings' component={SheetMusicGallery} />
             <Route path='/portfolio/canvas-paintings' component={CanvasGallery} />
