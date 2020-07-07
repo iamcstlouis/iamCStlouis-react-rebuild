@@ -59,39 +59,7 @@ const Navigation = () => {
                                             onClick={() => { setMobileMenuOpen(!MobileMenuOpen) }}
                                         >
                                             Portfolio
-                                            <i className="fas fa-angle-down"></i>
                                         </NavLink>
-
-                                        {/*  ------------ | Portfolio Submenu | ------------ */}
-                                        <div className="portfolio-submenu">
-                                            <ul className='portfolio-submenu__list'>
-                                                <li className='portfolio-submenu__list-item'>
-                                                    <NavLink to='/portfolio/sheetMusic-paintings'
-                                                        className='portfolio-submenu__link'
-                                                        onClick={() => { setMobileMenuOpen(!MobileMenuOpen) }}>
-                                                        Sheet Music Paintings
-                                                </NavLink>
-                                                </li>
-
-                                                <li className='portfolio-submenu__list-item'>
-                                                    <NavLink to='/portfolio/canvas-paintings'
-                                                        className='portfolio-submenu__link'
-                                                        onClick={() => { setMobileMenuOpen(!MobileMenuOpen) }}
-                                                    >
-                                                        Canvas Paintings
-                                                </NavLink>
-                                                </li>
-
-                                                <li className='portfolio-submenu__list-item'>
-                                                    <NavLink to='/portfolio/commissioned-paintings'
-                                                        className='portfolio-submenu__link'
-                                                        onClick={() => { setMobileMenuOpen(!MobileMenuOpen) }}
-                                                    >
-                                                        Commissioned Paintings
-                                                </NavLink>
-                                                </li>
-                                            </ul>
-                                        </div>
                                     </li>
                                     <li className='mobile-menu__list-item'>
                                         <NavLink
