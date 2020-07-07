@@ -54,7 +54,6 @@ const Navigation = () => {
                                     </li>
                                     <li className='mobile-menu__list-item mobile-menu__list-item--portfolio'>
                                         <NavLink
-                                            exact
                                             to='/portfolio'
                                             className='mobile-menu__link'
                                             onClick={() => { setMobileMenuOpen(!MobileMenuOpen) }}
@@ -96,7 +95,6 @@ const Navigation = () => {
                                     </li>
                                     <li className='mobile-menu__list-item'>
                                         <NavLink
-                                            exact
                                             to='/about'
                                             className='mobile-menu__link'
                                             onClick={() => { setMobileMenuOpen(!MobileMenuOpen) }}
@@ -106,7 +104,6 @@ const Navigation = () => {
                                     </li>
                                     <li className='mobile-menu__list-item'>
                                         <NavLink
-                                            exact
                                             to='/testimonials'
                                             className='mobile-menu__link'
                                             onClick={() => { setMobileMenuOpen(!MobileMenuOpen) }}
@@ -126,7 +123,6 @@ const Navigation = () => {
                                     </li>
                                     <li className='mobile-menu__list-item'>
                                         <NavLink
-                                            exact
                                             to='contact'
                                             className='mobile-menu__link'
                                             onClick={() => { setMobileMenuOpen(!MobileMenuOpen) }}
@@ -171,7 +167,6 @@ const Navigation = () => {
                                     </li>
                                     <li className='desktop-menu__list-item desktop-menu__list-item--portfolio'>
                                         <NavLink
-                                            exact
                                             to='/portfolio'
                                             className='desktop-menu__link'
                                             onMouseOver={() => { setDesktopDdOpen(!DesktopDdOpen) }}
@@ -185,7 +180,6 @@ const Navigation = () => {
                                     </li>
                                     <li className='desktop-menu__list-item'>
                                         <NavLink
-                                            exact
                                             to='/about'
                                             className='desktop-menu__link'
                                         >
@@ -194,7 +188,6 @@ const Navigation = () => {
                                     </li>
                                     <li className='desktop-menu__list-item'>
                                         <NavLink
-                                            exact
                                             to='/testimonials'
                                             className='desktop-menu__link'
                                         >
@@ -213,7 +206,6 @@ const Navigation = () => {
                                     </li>
                                     <li className='desktop-menu__list-item'>
                                         <NavLink
-                                            exact
                                             to='contact'
                                             className='desktop-menu__link'
                                         >
