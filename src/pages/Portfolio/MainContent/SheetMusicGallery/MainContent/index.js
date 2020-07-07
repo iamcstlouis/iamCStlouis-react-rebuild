@@ -4,7 +4,6 @@ import PageTitle from '../../../../../components/PageTitle'
 import TopQuote from '../../../../../components/TopQuote'
 
 import SheetMusicData from './SheetMusicData'
-import '../../SingleImage/styles.scss'
 
 const MainContent = () => {
     return (

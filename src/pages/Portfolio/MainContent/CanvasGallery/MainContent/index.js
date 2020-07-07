@@ -5,8 +5,6 @@ import SingleImage from '../../SingleImage'
 
 import CanvasData from '../../CanvasGallery/MainContent/CanvasData'
 
-import '../../styles.scss'
-
 const MainContent = () => {
     return (
         <React.Fragment>
