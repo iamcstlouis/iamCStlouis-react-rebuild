@@ -1,7 +1,6 @@
 import React from 'react'
 import { Route, Redirect } from 'react-router-dom'
 
-// import PageTitle from '../../../components/PageTitle'
 import SheetMusicGallery from './SheetMusicGallery'
 import CanvasGallery from './CanvasGallery'
 import CommissionedGallery from './CommissionedGallery'
