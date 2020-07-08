@@ -15,7 +15,7 @@ const MainContent = () => {
                 {
                     CanvasData.map((item) => {
                         return (
-                            <SingleImage largeImage={item.largeImage} dataTitle={item.dataTitle} imagePreview={item.imagePreview} alt={item.alt} overlayHdr={item.overlayHdr} overlaySub={item.overlaySub} key={item.id} />
+                            <SingleImage image={item.image} alt={item.alt} overlayHdr={item.overlayHdr} overlaySub={item.overlaySub} key={item.id} />
                         )
                     })
                 }
