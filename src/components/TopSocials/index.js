@@ -3,7 +3,7 @@ import './styles.scss'
 
 const TopSocials = () => {
     return (
-        <div className='top-socials' data-aos="fade-in">
+        <div className='top-socials' data-aos='fade-in'>
             <div className='links-wrapper'>
                 <a href='https://twitter.com/iamcstlouis' target='blank'><i
                     className='fab fa-twitter-square'></i></a>

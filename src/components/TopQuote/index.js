@@ -3,7 +3,7 @@ import './styles.scss'
 
 const TopQuote = () => {
     return (
-        <p className='top-quote' data-aos="fade-up">
+        <p className='top-quote' data-aos='fade-up'>
             “Art <span>has</span> no limitations. <span>I simply allow my brush to</span> follow, <span>as my
             mind</span> takes the lead.” <span className='artist-name'>- iamCStlouis
             </span>
