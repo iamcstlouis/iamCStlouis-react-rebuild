@@ -5,7 +5,7 @@ import './styles.scss'
 const SingleImage = ({ image, alt, overlayHdr, overlaySub }) => {
     return (
         <React.Fragment>
-            <div className='single-img'>
+            <div className='single-img' data-aos='fade-up' data-aos-delay='700'>
                 <div className='img-box'>
                     <img src={image}
                         alt={alt} />

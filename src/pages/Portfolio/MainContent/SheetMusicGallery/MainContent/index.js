@@ -8,7 +8,7 @@ import SheetMusicData from './SheetMusicData'
 const MainContent = () => {
     return (
         <React.Fragment>
-            <PageTitle title='Sheet Music Paintings' />
+            <PageTitle title='Sheet Music Paintings' AOSDelay={'100'} />
             <TopQuote />
             <div className='gallery-section'>
                 {

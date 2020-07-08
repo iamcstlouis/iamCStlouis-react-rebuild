@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Switch, Route } from 'react-router-dom'
 import { Container } from 'react-bootstrap'
 
@@ -12,10 +12,22 @@ import About from './pages/About'
 import Testimonials from './pages/Testimonials'
 import Contact from './pages/Contact'
 
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+
 import './assets/scss/reset.scss'
 import './assets/scss/base.scss'
 
 function App() {
+
+  useEffect(() => {
+    AOS.init({
+      duration: 1800,
+      delay: 500,
+      once: true
+    })
+  }, []);
+
   return (
     <div>
       <Header />

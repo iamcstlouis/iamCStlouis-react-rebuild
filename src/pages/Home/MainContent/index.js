@@ -8,10 +8,10 @@ const MainContent = () => {
     return (
         <React.Fragment>
             <Hero />
-            <PageTitle title={'What I Do'} />
+            <PageTitle title={'What I Do'} AOSDelay={900} />
             <MainCopy />
 
-            <TurqBtn btnLink={'/contact'} btnText={'Contact'} />
+            <TurqBtn btnLink={'/contact'} AOSAnimation={'fade-up'} AOSDelay={'500'} btnText={'Contact'} />
         </React.Fragment>
     )
 }

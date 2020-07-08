@@ -7,7 +7,7 @@ import './styles.scss'
 
 const Hero = () => {
     return (
-        <div className='hero-image-wrapper'>
+        <div className='hero-image-wrapper' data-aos='fade-up' data-aos-delay='700'>
             <img src={HeroMobile} alt='iamCStlouis at work' className='hero-mobile' />
 
             <img src={HeroDesktop} alt='iamCStlouis at work' className='hero-desktop' />

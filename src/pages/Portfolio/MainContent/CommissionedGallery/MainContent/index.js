@@ -8,7 +8,7 @@ import CommissionedData from './CommissionedData'
 const MainContent = () => {
     return (
         <React.Fragment>
-            <PageTitle title={'Commissioned Paintings'} />
+            <PageTitle title={'Commissioned Paintings'} AOSDelay={'100'} />
             <TopQuote />
 
             <div className='gallery-section'>

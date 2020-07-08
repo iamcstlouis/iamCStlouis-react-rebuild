@@ -3,7 +3,7 @@ import './styles.scss'
 
 const MainCopy = () => {
     return (
-        <div className='what-i-do-txt-wrapper'>
+        <div className='what-i-do-txt-wrapper' data-aos='fade-up' data-aos-delay='1200'>
             <p>
                 Welcome to iamCStlouis’ website. If you're looking for original, top quality paintings
                 and

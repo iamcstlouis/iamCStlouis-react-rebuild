@@ -8,7 +8,7 @@ import CanvasData from '../../CanvasGallery/MainContent/CanvasData'
 const MainContent = () => {
     return (
         <React.Fragment>
-            <PageTitle title={'Canvas Paintings'} />
+            <PageTitle title={'Canvas Paintings'} AOSDelay={'100'} />
             <TopQuote />
 
             <div className='gallery-section'>

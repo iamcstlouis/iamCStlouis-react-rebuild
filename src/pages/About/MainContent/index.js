@@ -9,7 +9,7 @@ import './styles.scss'
 const MainContent = () => {
     return (
         <React.Fragment>
-            <PageTitle title={'About Me'} />
+            <PageTitle title={'About Me'} AOSDelay={'100'} />
             <TopQuote />
 
             <div className='content-wrapper'>
