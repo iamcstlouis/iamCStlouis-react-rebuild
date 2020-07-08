@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import { useLocation } from 'react-router-dom'
 import Profile from '../Profile'
 import TopSocials from '../TopSocials'
 
@@ -6,11 +7,12 @@ import './styles.scss'
 import ContactInfo from '../ContactInfo'
 
 const ProfileAndContactInfo = () => {
-    const pathname = window.location.pathname
 
-    // const [isHomepage, setProfile] = useState(pathname === '/')
-    // const [isContactPage, setContactInfo] = useState(pathname === '/contact')
+    const location = useLocation();
+    const pathname = location.pathname;
+    let whatToShow = null;
 
+    // ------------ | Sets breakpoint and window resize | ------------ 
     const [width, setWidth] = useState(window.innerWidth)
     const breakpoint = 1024;
 
@@ -23,8 +25,11 @@ const ProfileAndContactInfo = () => {
 
     return (
         <React.Fragment>
-
-            {pathname === '/' ? <Profile /> : pathname === '/contact' ? <ContactInfo /> : null}
+            {
+                pathname === '/' ? whatToShow = <Profile />
+                    : pathname === '/contact' ? whatToShow = <ContactInfo />
+                        : whatToShow
+            }
 
             {width >= breakpoint && <TopSocials />}
         </React.Fragment>

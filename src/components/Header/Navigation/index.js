@@ -91,7 +91,7 @@ const Navigation = () => {
                                     </li>
                                     <li className='mobile-menu__list-item'>
                                         <NavLink
-                                            to='contact'
+                                            to='/contact'
                                             className='mobile-menu__link'
                                             onClick={() => { setMobileMenuOpen(!MobileMenuOpen) }}
                                         >
@@ -174,7 +174,7 @@ const Navigation = () => {
                                     </li>
                                     <li className='desktop-menu__list-item'>
                                         <NavLink
-                                            to='contact'
+                                            to='/contact'
                                             className='desktop-menu__link'
                                         >
                                             Contact
