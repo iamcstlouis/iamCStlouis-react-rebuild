@@ -22,7 +22,6 @@ const MainContent = () => {
 
     return (
         <React.Fragment>
-
             {width < breakpoint && <SubNav />}
 
             <Route exact path='/portfolio' render={() => <Redirect to='/portfolio/sheetMusic-paintings' />} />

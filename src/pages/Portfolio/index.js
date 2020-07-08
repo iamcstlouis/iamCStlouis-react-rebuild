@@ -3,9 +3,9 @@ import MainContent from '../Portfolio/MainContent'
 
 const Portfolio = () => {
     return (
-        <div>
+        <React.Fragment>
             <MainContent />
-        </div>
+        </React.Fragment>
     )
 }
 
