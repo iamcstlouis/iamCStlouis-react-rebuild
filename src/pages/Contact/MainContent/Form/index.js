@@ -3,7 +3,7 @@ import './styles.scss'
 
 const Form = () => {
     return (
-        <div className="form-wrapper">
+        <div className='form-wrapper'>
 
             <form
                 name='painting-enquiry'
@@ -12,6 +12,9 @@ const Form = () => {
                 data-netlify-honeypot='bot-field'
                 className='contact-form'
             >
+
+                <input type='hidden' name='contact-form' value='painting-enquiry' />
+
                 <h2 className='form-header'>General Enquiries</h2>
 
                 <input type='hidden' name='form-name' value='website-price-enquiry' />
@@ -26,7 +29,7 @@ const Form = () => {
                     <span>Send</span>
                 </button>
             </form>
-        </div >
+        </div>
     )
 }
 
