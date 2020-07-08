@@ -4,13 +4,13 @@ import MainContent from './MainContent'
 
 const CanvasGallery = () => {
     return (
-        <div>
+        <React.Fragment>
             <Helmet>
                 <title>iamCStlouis | Portfolio - Canvas Paintings</title>
             </Helmet>
 
             <MainContent />
-        </div>
+        </React.Fragment>
     )
 }
 

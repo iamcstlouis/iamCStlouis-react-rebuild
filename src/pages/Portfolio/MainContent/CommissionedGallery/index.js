@@ -4,13 +4,13 @@ import MainContent from './MainContent'
 
 const CommissionedGallery = () => {
     return (
-        <div>
+        <React.Fragment>
             <Helmet>
                 <title>iamCStlouis | Portfolio - Commissioned Paintings</title>
             </Helmet>
 
             <MainContent />
-        </div>
+        </React.Fragment>
     )
 }
 
