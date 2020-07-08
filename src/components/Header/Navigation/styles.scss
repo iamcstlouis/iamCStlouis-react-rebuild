@@ -113,6 +113,10 @@
                 padding-top: 14rem;
             }
 
+            @media screen and (max-height: 375px) {
+                padding-top: 8rem;
+            }
+
             .row {
                 .col {
                     display: block;
@@ -127,6 +131,10 @@
 
                         &__list-item {
                             margin-bottom: 2rem;
+
+                            @media screen and (max-height: 375px) {
+                                margin: 0;
+                            }
                         }
 
                         &__link {
@@ -143,6 +151,10 @@
 
                             &.active {
                                 color: #fff;
+                            }
+
+                            @media screen and (max-height: 375px) {
+                                font-size: 18px;
                             }
                         }
 
