@@ -3,14 +3,5 @@
 
 .not-found {
     text-align: center;
-    height: 35rem;
-    margin-top: 13rem;
-
-    @media screen and (min-width: 768px) {
-        height: 57rem;
-    }
-
-    @media screen and (min-width: 1024px) {
-        height: 30rem;
-    }
+    margin-top: 3rem;
 }
