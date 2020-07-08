@@ -11,6 +11,7 @@ import Portfolio from './pages/Portfolio'
 import About from './pages/About'
 import Testimonials from './pages/Testimonials'
 import Contact from './pages/Contact'
+import NotFound from './pages/NotFound'
 
 import AOS from 'aos'
 import 'aos/dist/aos.css'
@@ -45,6 +46,7 @@ function App() {
             <Route path='/about' component={About} />
             <Route path='/testimonials' component={Testimonials} />
             <Route path='/contact' component={Contact} />
+            <Route component={NotFound} />
           </Switch>
         </Container>
       </main>
