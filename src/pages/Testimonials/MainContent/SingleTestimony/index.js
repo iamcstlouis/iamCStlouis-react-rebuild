@@ -6,15 +6,15 @@ const SingleTestimony = ({ img, alt, testimonialQuote, testimonyFrom, excerpt })
     return (
         <div className='single-testimony'>
             <img src={img}
-                alt={alt} />
+                alt={alt} className='single-testimony__img' />
 
-            <div className='testimonial-txt-box'>
-                <p className='testimonial-quote'>
+            <div className='single-testimony__txt-box'>
+                <p className='single-testimony__quote'>
                     {testimonialQuote}
                 </p>
 
-                <span>{testimonyFrom} </span>
-                <p className='testimonial-sub'>
+                <span className='single-testimony__testimony-from'>{testimonyFrom} </span>
+                <p className='single-testimony__excerpt'>
                     - {excerpt}
                 </p>
             </div>
