@@ -5,8 +5,8 @@ import './styles.scss'
 
 const TurqBtn = ({ btnLink, AOSAnimation, AOSDelay, btnText }) => {
     return (
-        <div className='turq-btn-wrapper'>
-            <div className='btn' data-aos={AOSAnimation} data-aos-delay={AOSDelay}>
+        <div className='turq-btn-wrapper' data-aos={AOSAnimation} data-aos-delay={AOSDelay}>
+            <div className='btn'>
                 <Link to={btnLink}>{btnText}</Link>
             </div>
         </div>
