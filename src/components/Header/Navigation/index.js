@@ -1,14 +1,15 @@
 import React, { useState } from 'react'
 import { NavLink, Link } from 'react-router-dom'
 import { Container, Col, Row } from 'react-bootstrap'
-import Dropdown from './Dropdown'
+
+import DesktopSubNav from '../../../pages/Portfolio/MainContent/DesktopSubNav'
 
 import './styles.scss'
 import Logo from '../../../images/global/cs-logo.png'
 
 const Navigation = () => {
     const [MobileMenuOpen, setMobileMenuOpen] = useState(false);
-    const [DesktopDdOpen, setDesktopDdOpen] = useState(false);
+    const [DesktopSubnavOpen, setDesktopSubnavOpen] = useState(false);
 
     return (
         <div className='navigation'>
@@ -137,14 +138,13 @@ const Navigation = () => {
                                         <NavLink
                                             to='/portfolio'
                                             className='desktop-menu__link'
-                                            onMouseOver={() => { setDesktopDdOpen(!DesktopDdOpen) }}
-                                            onMouseLeave={() => { setDesktopDdOpen(DesktopDdOpen) }}
+                                            onClick={() => { setDesktopSubnavOpen(!DesktopSubnavOpen) }}
                                         >
                                             Portfolio
-                                             <i className="fas fa-angle-down"></i>
+                                            <i className="fas fa-plus"></i>
                                         </NavLink>
 
-                                        {DesktopDdOpen && <Dropdown />}
+                                        {DesktopSubnavOpen && <DesktopSubNav />}
                                     </li>
                                     <li className='desktop-menu__list-item'>
                                         <NavLink

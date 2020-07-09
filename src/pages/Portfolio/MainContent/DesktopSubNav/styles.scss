@@ -1,0 +1,42 @@
+@import '../../../../assets/scss/variables.scss';
+@import '../../../../assets/scss/mixins.scss';
+
+.desktop-subnav {
+    opacity: 0;
+    transition: all 1s;
+
+    &.subnav-entered {
+        opacity: 1;
+    }
+
+    &__list {
+        display: flex;
+    }
+
+    &__list-item {
+        display: block;
+        margin-right: 2.5rem;
+
+        &:first-child {
+            margin-left: 2rem;
+        }
+
+        &:last-child {
+            margin-right: 1rem;
+        }
+    }
+
+    &__link {
+        font-size: 14px;
+        color: #fff;
+        @include btn-hover;
+
+        &:hover {
+            color: $clr-darkTeal;
+        }
+
+        &.active {
+            color: $clr-darkTeal;
+        }
+    }
+}
