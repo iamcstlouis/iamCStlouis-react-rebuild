@@ -10,7 +10,7 @@ const NotFound = () => {
         <div className='not-found'>
             <div className="not-found__content">
                 <div className="not-found__main-copy">
-                    <h1 className='not-found__msg' data-aos='fade-up' data-aos-delay='200'><span className='not-found__msg not-found__msg--accent'>Damn.</span>.. Page not found</h1>
+                    <h1 className='not-found__msg' data-aos='fade-up' data-aos-delay='200'><span className='not-found__msg not-found__msg--accent'>Damn.</span>.. Page not found!</h1>
                     <TurqBtn btnLink={'/'} btnText={'Return to Homepage?'} AOSAnimation={'fade-up'} AOSDelay={'600'} />
                 </div>
 
