@@ -4,4 +4,21 @@
 .not-found {
     text-align: center;
     margin-top: 3rem;
+
+    &__msg {
+        &--accent {
+            font-weight: 700;
+            color: rgb(189, 20, 20);
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+    }
+
+    &__img-wrapper {
+        margin-top: 2rem;
+
+        img {
+            border: solid $clr-lighterGrey 3px;
+        }
+    }
 }
