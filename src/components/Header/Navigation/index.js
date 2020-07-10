@@ -135,14 +135,13 @@ const Navigation = () => {
                                         </NavLink>
                                     </li>
                                     <li className='desktop-menu__list-item desktop-menu__list-item--portfolio'>
-                                        <NavLink
-                                            to='/portfolio'
-                                            className='desktop-menu__link'
+                                        <button
+                                            className='desktop-menu__link desktop-menu__link--portfolio-btn'
                                             onClick={() => { setDesktopSubnavOpen(!DesktopSubnavOpen) }}
                                         >
                                             Portfolio
                                             <i className="fas fa-plus"></i>
-                                        </NavLink>
+                                        </button>
 
                                         {DesktopSubnavOpen && <DesktopSubNav />}
                                     </li>

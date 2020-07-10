@@ -2,15 +2,19 @@
 @import '../../../../assets/scss/mixins.scss';
 
 .desktop-subnav {
-    opacity: 0;
-    transition: all 1s;
-
-    &.subnav-entered {
-        opacity: 1;
-    }
+    transition: all 2s;
 
     &__list {
         display: flex;
+        opacity: 0;
+        transform: translateX(150px);
+        transition: all 2s;
+
+        &.subnav-entered {
+            opacity: 1;
+            width: 100%;
+            transform: translateX(0);
+        }
     }
 
     &__list-item {
