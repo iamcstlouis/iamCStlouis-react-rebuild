@@ -239,15 +239,16 @@
                         color: $clr-white;
                     }
 
-                    i {
-                        font-size: 10px;
-                        padding-left: .5rem;
-                    }
 
                     &--portfolio-btn {
                         border: none;
                         background: $clr-lightTeal;
                         outline: none;
+
+                        i {
+                            font-size: 10px;
+                            padding-left: .5rem;
+                        }
                     }
                 }
             }
