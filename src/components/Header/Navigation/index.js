@@ -140,7 +140,8 @@ const Navigation = () => {
                                             onClick={() => { setDesktopSubnavOpen(!DesktopSubnavOpen) }}
                                         >
                                             Portfolio
-                                            <i className="fas fa-plus"></i>
+                                            <i className='fas fa-plus' style={{ display: DesktopSubnavOpen ? 'none' : 'block' }}></i>
+                                            <i className='fas fa-minus' style={{ display: DesktopSubnavOpen ? 'block' : 'none' }}></i>
                                         </button>
 
                                         {DesktopSubnavOpen && <DesktopSubNav />}
