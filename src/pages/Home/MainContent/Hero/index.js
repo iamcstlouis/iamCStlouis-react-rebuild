@@ -6,7 +6,7 @@ import './styles.scss'
 const Hero = () => {
     return (
         <React.Fragment>
-            <div className='hero-image-wrapper' data-aos='fade-up'>
+            <div className='hero-image-wrapper' data-aos='fade-up' data-aos-delay='200'>
                 <img src={HeroImage} alt='iamCStlouis with her painting of MJ'
                     className='hero-image' />
             </div>
