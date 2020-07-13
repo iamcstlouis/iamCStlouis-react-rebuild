@@ -2,13 +2,13 @@
 @import '../../../../assets/scss/mixins.scss';
 
 .desktop-subnav {
-    transition: all 2s;
+    transition: all .5s;
 
     &__list {
         display: flex;
         opacity: 0;
         transform: translateX(150px);
-        transition: all 2s;
+        transition: all .5s;
 
         &.subnav-entered {
             opacity: 1;
