@@ -21,7 +21,7 @@
         border: solid $clr-lighterGrey .2rem;
 
         &:last-child {
-            justify-self: flex-start;
+            margin-right: auto;
         }
 
         &:hover {

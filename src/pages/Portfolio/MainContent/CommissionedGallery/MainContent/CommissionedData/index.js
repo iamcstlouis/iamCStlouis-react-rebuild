@@ -5,6 +5,7 @@ import CeliasBestieBdayGiftImage from '../../../../../../images/portfolio/commis
 import ShystieBdayGiftImage from '../../../../../../images/portfolio/commissioned/shystie-commiss-preview.jpg'
 import FBlockGreatestHitsImage from '../../../../../../images/portfolio/commissioned/f-block-greatest-hits-commiss-preview.jpg'
 import AMothersLoveImage from '../../../../../../images/portfolio/commissioned/nat-and-tilly-commiss-preview.jpg'
+import ForNatalieImage from '../../../../../../images/portfolio/commissioned/for-natalie-commiss-preview.jpg'
 
 const CommissionedData = [
     {
@@ -27,6 +28,13 @@ const CommissionedData = [
         overlayHdr: 'Surprise Gift for the Bride and Groom',
         overlaySub: 'Acrylic paint on A3 Sheet Music Collage',
         id: 'celias-cousin-wedding-gift'
+    },
+    {
+        image: ForNatalieImage,
+        alt: 'iamCStlouis \'Wedding Gift\' Digital Painting. Hand embellished with Acrylic paint',
+        overlayHdr: 'Wedding Gift for the Bride and Groom',
+        overlaySub: 'Digital print on A3 Sheet Music. Hand embellished with Acrylic paint',
+        id: 'natalie-wedding-gift'
     },
     {
         image: CeliasBestieBdayGiftImage,
