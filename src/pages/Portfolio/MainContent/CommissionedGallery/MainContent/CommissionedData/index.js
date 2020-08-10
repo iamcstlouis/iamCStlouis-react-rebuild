@@ -62,15 +62,15 @@ const CommissionedData = [
         image: AMothersLove,
         alt: 'iamCStlouis \'A Mother\'s Love\' Acrylic Painting',
         overlayHdr: 'A Mother\'s Love',
-        overlaySub: 'Acrylic paint on 18" x 24" Canvas',
+        overlaySub: 'Acrylic paint on 16" x 20" Canvas',
         id: 'a-mothers-love'
     },
     {
         image: AMothersLoveSharedImage,
         alt: 'iamCStlouis \'A Mother\'s Love\' Acrylic Painting',
-        overlayHdr: 'A Mother\'s Love',
-        overlaySub: 'Acrylic paint on 18" x 24" Canvas',
-        id: 'a-mothers-love'
+        overlayHdr: 'A Mother\'s Love Shared',
+        overlaySub: 'Acrylic paint on 16" x 20" Canvas',
+        id: 'a-mothers-love-shared'
     },
 ]
 
