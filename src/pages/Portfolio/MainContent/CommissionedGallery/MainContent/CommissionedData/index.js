@@ -1,11 +1,12 @@
 import RobAndDannyWeddingGiftImage from '../../../../../../images/portfolio/commissioned/rob-and-danny-commiss-preview.jpg'
 import JannelAndJamesWeddingGiftImage from '../../../../../../images/portfolio/commissioned/jannel-and-james-commiss-preview.jpg'
 import CeliasCuzWeddingGiftImage from '../../../../../../images/portfolio/commissioned/celias-cousin-wedding-commiss-preview.jpg'
+import ForNatalieImage from '../../../../../../images/portfolio/commissioned/for-natalie-commiss-preview.jpg'
 import CeliasBestieBdayGiftImage from '../../../../../../images/portfolio/commissioned/celia-best-friend-commiss-preview.jpg'
 import ShystieBdayGiftImage from '../../../../../../images/portfolio/commissioned/shystie-commiss-preview.jpg'
 import FBlockGreatestHitsImage from '../../../../../../images/portfolio/commissioned/f-block-greatest-hits-commiss-preview.jpg'
-import AMothersLoveImage from '../../../../../../images/portfolio/commissioned/nat-and-tilly-commiss-preview.jpg'
-import ForNatalieImage from '../../../../../../images/portfolio/commissioned/for-natalie-commiss-preview.jpg'
+import AMothersLove from '../../../../../../images/portfolio/commissioned/a-mothers-love.jpg'
+import AMothersLoveSharedImage from '../../../../../../images/portfolio/commissioned/a-mothers-love-shared.jpg'
 
 const CommissionedData = [
     {
@@ -58,7 +59,14 @@ const CommissionedData = [
         id: 'f-block-greatest-hits'
     },
     {
-        image: AMothersLoveImage,
+        image: AMothersLove,
+        alt: 'iamCStlouis \'A Mother\'s Love\' Acrylic Painting',
+        overlayHdr: 'A Mother\'s Love',
+        overlaySub: 'Acrylic paint on 18" x 24" Canvas',
+        id: 'a-mothers-love'
+    },
+    {
+        image: AMothersLoveSharedImage,
         alt: 'iamCStlouis \'A Mother\'s Love\' Acrylic Painting',
         overlayHdr: 'A Mother\'s Love',
         overlaySub: 'Acrylic paint on 18" x 24" Canvas',
